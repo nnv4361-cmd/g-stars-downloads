@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Mode": "UAT",
+  "Host": "SQL-TEST\\SQLEXPRESS",
+  "Port": 0,
+  "Database": "CarsoftTest",
+  "Authentication": "Windows",
+  "User": "",
+  "DatabaseId": "",
+  "Unit": "",
+  "Encrypt": true
+}

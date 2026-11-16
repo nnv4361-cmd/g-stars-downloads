@@ -1,19 +1,39 @@
 # G-Stars
 
+Phần mềm Windows — **bản thử nghiệm 2026.11.16.50**.
+
 **[Tải G-Stars-Setup.exe — bản mới nhất](https://github.com/nnv4361-cmd/g-stars-downloads/releases/latest/download/G-Stars-Setup.exe)** · khoảng 223 MB · Windows 10/11
 
-Không cần tài khoản GitHub. Link tải cố định; những lần phát hành tiếp theo giữ nguyên tên file và cập nhật release Latest.
+[Xem Releases và checksum](https://github.com/nnv4361-cmd/g-stars-downloads/releases/latest) · [Những thay đổi](CHANGELOG.md)
 
-1. Tải và chạy **G-Stars-Setup.exe**. Bộ cài kiểm tra .NET Framework 4.8 và Crystal Reports x86 phù hợp, cài thành phần còn thiếu; cần quyền quản trị khi Windows yêu cầu.
-2. Mở G-Stars và chọn **SQL TEST do IT cung cấp** để làm nghiệp vụ. Bộ cài không chứa database hoặc tài khoản SQL.
-3. Gặp lỗi: **Báo lỗi** hoặc **Ctrl + Shift + F12** → mô tả → kiểm tra nội dung → **Gửi báo lỗi**. Không cần GitHub hoặc cấu hình khóa trên từng máy.
+Không cần tài khoản GitHub để tải hoặc gửi báo lỗi. Link tải giữ nguyên khi phát hành bản mới.
 
-Hướng dẫn IT và checksum nằm trong [Assets của bản mới nhất](https://github.com/nnv4361-cmd/g-stars-downloads/releases/latest).
+## Bắt đầu
 
-## Phạm vi
+1. **IT** chuẩn bị SQL TEST riêng và thông tin kết nối.
+2. **Nhân viên** tải bộ cài, cài G-Stars, nhận cấu hình từ IT rồi đăng nhập phần mềm.
+3. Gặp lỗi: bấm **Báo lỗi** hoặc **Ctrl + Shift + F12** trong G-Stars.
 
-Đây là **bản kiểm thử UAT**, chưa công bố nghiệm thu toàn bộ nghiệp vụ hoặc triển khai production. Thư viện gốc vẫn chịu điều khoản cấp phép tương ứng; bộ cài G-Stars hiện chưa ký số. IT kiểm tra SHA256 trước khi cài.
+| Cần làm gì? | Hướng dẫn |
+| --- | --- |
+| Cài đặt, đăng nhập, cập nhật | [Dành cho nhân viên](docs/HUONG-DAN-NHAN-VIEN.md) |
+| Cấu hình SQL, cấp quyền, phát nhiều máy | [Dành cho IT](docs/HUONG-DAN-IT.md) |
+| Không kết nối được, lỗi IP/tài khoản/TLS/database | [Gỡ lỗi kết nối](docs/GO-LOI-KET-NOI.md) |
+| Gửi lỗi, mất mạng, mở phần mềm không được | [Báo lỗi](docs/BAO-LOI.md) |
+| Phạm vi đã kiểm thử và việc còn cần xác minh | [Tình trạng kiểm thử](docs/TINH-TRANG-KIEM-THU.md) |
 
-Repo này chỉ phát hành bộ cài và hướng dẫn. Source, SQL backup, thông tin đăng nhập và repository báo lỗi không được công khai. Khóa GitHub dùng bởi dịch vụ nhận lỗi nằm ở server; client chỉ có capability gửi báo lỗi có giới hạn tần suất.
+## Kết nối SQL từ bản 50
 
-Không gửi dữ liệu khách hàng, mật khẩu, database hoặc chứng từ lên Issues công khai. Hãy dùng nút Báo lỗi trong ứng dụng để gửi đến hệ thống nhận lỗi riêng.
+Ô **Máy chủ** nhận `IP`, `IP,cổng` hoặc `SERVER\INSTANCE`. Cổng, đơn vị và TLS nằm trong **Nâng cao**. G-Stars tự đọc mã định danh của database TEST đã chuẩn bị; người dùng không phải nhập mã này.
+
+**Tài khoản kết nối SQL và tài khoản đăng nhập G-Stars là hai việc khác nhau.** Nếu IT cấp quyền Windows Authentication, chọn **Windows** và không nhập thêm tên/mật khẩu SQL. Nếu dùng SQL Authentication, IT cung cấp hoặc cấu hình tài khoản kết nối phù hợp; không cần tạo một SQL account riêng cho từng nhân viên chỉ để dùng G-Stars.
+
+## Database để thử nghiệm
+
+SQL Server phải đang chạy và database TEST phải tương thích G-Stars. Backup Carsoft gốc chưa bổ sung các thành phần G-Stars có thể không đủ để chạy. Xem [điều kiện database](docs/HUONG-DAN-IT.md#chuẩn-bị-database-test) trước khi phát cho nhiều máy.
+
+## Phạm vi phát hành
+
+Đây là bản UAT, chưa công bố nghiệm thu toàn bộ nghiệp vụ hoặc triển khai production. Bộ cài hiện chưa ký số; IT kiểm tra checksum và chính sách Windows trước khi cài. Các thư viện Microsoft/SAP giữ điều khoản cấp phép tương ứng.
+
+Kho công khai này chứa bộ cài, tài liệu, mẫu cấu hình và công cụ hỗ trợ IT. SQL backup, thông tin đăng nhập thực tế, mã nguồn ứng dụng và repository nhận báo lỗi không được công khai. Gửi lỗi bằng nút trong G-Stars; không đăng dữ liệu khách hàng hoặc mật khẩu lên GitHub công khai.
