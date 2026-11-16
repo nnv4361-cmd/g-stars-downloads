@@ -2,6 +2,15 @@
 
 [Về trang chính](README.md) · [Bản mới nhất](https://github.com/nnv4361-cmd/g-stars-downloads/releases/latest)
 
+## 2026.11.16.52 — 16/11/2026
+
+- Chặn kết quả tạo hóa đơn có mã ERP khác chứng từ đang gửi; giữ trạng thái cần đối chiếu và không tự tạo lại. Kiểm tra cả biên nhận đã lưu từ bản cũ.
+- Giới hạn kích thước ngay khi đọc phản hồi API/PDF và tệp cấu hình/biên nhận; không đọc hết rồi mới từ chối. Giữ nguyên định dạng dữ liệu hợp lệ.
+- Tái sử dụng ảnh nhận diện, giải phóng ảnh do G-Stars tạo khi thay/đóng; giải phóng StringFormat sau khi vẽ.
+- Đường gọi hóa đơn đều giữ chặn gửi dịch vụ thật trong cấu hình UAT dành cho tester. Kiểm thử bằng transport giả, không tạo hóa đơn thật trong đợt debug.
+- Rà 1.128 C# khoảng919.000dòng bằng Roslyn và analyzer ngữ nghĩa Microsoft; không có lỗi cú pháp/biên dịch. Cảnh báo ownership/lifecycle được giữ để xác minh, không coi mọi cảnh báo là lỗi đã sửa.
+- Source tái build độc lập đúng hash; portable và bộ cài cùng client. Kiểm tra payload bộ cài chỉ đọc, không chạy cài đặt hoặc thay runtime hệ thống.
+
 ## 2026.11.16.51 — 16/11/2026
 
 - Hiện số phiên bản trên thanh trên cùng. Bấm để kiểm tra bản mới và tải bộ cài từ GitHub chính thức.
