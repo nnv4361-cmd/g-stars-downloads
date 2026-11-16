@@ -2,6 +2,14 @@
 
 [Về trang chính](README.md) · [Bản mới nhất](https://github.com/nnv4361-cmd/g-stars-downloads/releases/latest)
 
+## 2026.11.16.51 — 16/11/2026
+
+- Hiện số phiên bản trên thanh trên cùng. Bấm để kiểm tra bản mới và tải bộ cài từ GitHub chính thức.
+- Có tùy chọn tự kiểm tra bản mới khi mở phần mềm, mặc định tắt. Không tự cài hoặc ghi đè chương trình đang mở; mất Internet không chặn nghiệp vụ.
+- Kiểm tra cập nhật dùng HTTPS/TLS1.2, không cần tài khoản GitHub, không gửi thông tin SQL hoặc chứng từ; chỉ nhận release chính thức đúng kênh.
+- Kiểm tra lại khởi động, 9 phân hệ, 18 ngữ cảnh form, tài nguyên, SQL, 184 mẫu Crystal và lưu/hủy chứng từ trên backup riêng. Xem phạm vi và các điểm còn chậm bên dưới.
+- Engine nghiệp vụ và định nghĩa SQL không đổi. Portable/bộ cài dùng cùng host đã kiểm tra, không chứa khóa GitHub hoặc dữ liệu backup.
+
 ## 2026.11.16.50 — 16/11/2026
 
 - Nhập máy chủ bằng IP, IP,cổng hoặc SERVER\INSTANCE; cổng riêng và các tùy chọn ít dùng nằm trong Nâng cao.

@@ -33,6 +33,8 @@ Chọn đúng đơn vị và kiểm tra bộ lọc ngày/trạng thái khi tìm 
 
 ## 4. Cập nhật bản mới
 
+Bấm số phiên bản ở thanh trên cùng → **Kiểm tra bản mới**. Có thể bật kiểm tra tự động khi mở phần mềm; xem [Phiên bản và cập nhật](PHIEN-BAN-VA-CAP-NHAT.md).
+
 Lưu công việc, đóng G-Stars, tải **G-Stars-Setup.exe** từ cùng [link bản mới nhất](https://github.com/nnv4361-cmd/g-stars-downloads/releases/latest/download/G-Stars-Setup.exe), rồi nhờ IT cài bản cập nhật theo chính sách công ty.
 
 Cấu hình và hàng đợi báo lỗi gắn với tài khoản Windows đang dùng. Khi đổi máy hoặc tài khoản Windows, nhờ IT cấu hình lại; không chép file mật khẩu mã hóa từ người khác.

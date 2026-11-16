@@ -1,6 +1,6 @@
 # G-Stars
 
-Phần mềm Windows — **bản thử nghiệm 2026.11.16.50**.
+Phần mềm Windows — **bản thử nghiệm 2026.11.16.51**.
 
 **[Tải G-Stars-Setup.exe — bản mới nhất](https://github.com/nnv4361-cmd/g-stars-downloads/releases/latest/download/G-Stars-Setup.exe)** · khoảng 223 MB · Windows 10/11
 
@@ -16,6 +16,7 @@ Không cần tài khoản GitHub để tải hoặc gửi báo lỗi. Link tải
 
 | Cần làm gì? | Hướng dẫn |
 | --- | --- |
+| Xem phiên bản, kiểm tra/tải cập nhật | [Phiên bản và cập nhật](docs/PHIEN-BAN-VA-CAP-NHAT.md) |
 | Cài đặt, đăng nhập, cập nhật | [Dành cho nhân viên](docs/HUONG-DAN-NHAN-VIEN.md) |
 | Cấu hình SQL, cấp quyền, phát nhiều máy | [Dành cho IT](docs/HUONG-DAN-IT.md) |
 | Không kết nối được, lỗi IP/tài khoản/TLS/database | [Gỡ lỗi kết nối](docs/GO-LOI-KET-NOI.md) |
