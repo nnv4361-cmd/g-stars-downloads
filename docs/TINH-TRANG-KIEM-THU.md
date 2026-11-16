@@ -1,18 +1,16 @@
-# Kiểm thử G-Stars56
+# Kiểm thử G-Stars57
 
-[Trang chính](../README.md) · [Bản sửa56](BAN-SUA-56.md)
+[Trang chính](../README.md) · [Bản57](BAN-SUA-57.md)
 
-Toàn bộ SQL test chỉ dùng scenario backup riêng trong container dự án, không có schema client_lab hoặc marker lab. Tài khoản kết nối không phải sysadmin/db_owner và bị DENY VIEW DEFINITION. Không truy cập SQL công ty/OpenClaw.
-
-| Phạm vi | Kết quả lab |
+| Phạm vi | Bằng chứng |
 | --- | --- |
-| Lỗi xem báo giá | Bản55 tái hiện Not supported within subreports; bản56 mở viewer và xuất PDF thật từ báo giá có dữ liệu |
-| Nhánh in | Kiểm tra core gửi đúng số bản/khoảng trang một lần, chặn khoảng trang sai; bộ nhận giả lập, không gửi máy in vật lý |
-| Chữ và thao tác |240control giữ tên/kiểu/parent/Tab;239font nhỏ thay đổi,68ô nhập nhỏ được tăng lên9pt, tăng tương phản; chưa nghiệm thu cảm nhận màn hình/DPI thật của IT |
-| Cấu hình IT cả máy |17kiểm tra mã hóa, DPAPI format, owner/ACL, Users chỉ đọc, tamper, lưu lỗi giữ cấu hình cũ, cập nhật nguyên tử và export không mật khẩu; fixture nằm riêng, không chạm ProgramData thật hoặc UAC |
-| Đăng nhập/quyền/báo cáo |52kiểm tra trên backend native, dùng tài khoản/quyền SQL;8báo cáo nhúng, output/NULL/phiên tạm đúng phạm vi đã kiểm chứng |
-| Menu và màn nghiệp vụ |109mẫu native,9phân hệ/18ngữ cảnh;0lỗi trong lượt chạy |
-| Lưu/mở lại/hủy hóa đơn |70kiểm tra normal/NVAT, đọc lại độc lập, khóa kỳ/tài khoản/lỗi/replay/rollback/dọn fixture; PDF Crystal thật |
-| Nguồn và bộ cài |1.133C# tái build độc lập đúng host/engine/runtime;322appfiles đúng hash,333kiểm tra archive; engine giữ nguyên so55 |
+| Core updater |72kiểm tra: tải đủ/thiếu/quá kích thước/saihash/hủy, metadata giả, traversal/tên file/duplicate ZIP, SQL sentinel, thay file, lỗi giữa chừng/hoàn tác/file khóa/xung đột tài liệu, close-cancel/commit và DPAPI ticket |
+| Cài đặt |Handoff bộ cài kiểm tra callback giả lập, tham số passive/norestart, exitcode/UAC cancel giả; chưa chạy Setup/MSIapply/UAC thật trong lab |
+| Portable |Core thao tác file thật trên fixture riêng. Gói phát hành được kiểm tra từng hash; bằng chứng worker tải gói công khai/thay file/khởi động diagnostic được ghi riêng trong dự án, không chạy đăng nhập công ty |
+| SQL và giao diện |52kiểm tra tài khoản/quyền/8báo cáo,17cấu hình IT,109mẫu native, xem/PDF báo giá từ backup riêng; engine và logic lưu chứng từ giữ nguyên56 |
+| Nguồn |1.136C# tái build độc lập đúng host/engine/worker/runtime;1075source gốc giữ nguyên |
+| Đóng gói |323appfiles,334kiểm tra archive và334release-sync theo số file;5asset gồm Setup, hướng dẫn, SHA256 và gói update |
 
-Không phải chứng nhận toàn ERP hoặc mọi backup.44thânSQLgốc vẫn thiếu/0khôi phục;35nhánh backend và số liệu đầy đủ của8báo cáo cần mở rộng nghiệm thu. Chưa nghiệm thu Windows sạch/installer apply/UAC thật/hai tài khoản Windows thật/Windows domain/mạng công ty/Office/máy in vật lý. Dữ liệu rỗng chỉ chứng minh schema/adapter, không phải oracle tài chính đầy đủ.
+Chỉ dùng SQLbackup scenario dự án, không truy cập SQL công ty/OpenClaw; không thêm SQLcopy/backup hoặc đổi runtime toàn hệ thống.455định nghĩa giữ hash (424nghiệp vụ+31helper), audit/fixture được bảo toàn theo phạm vi test. Các giao dịch normal/NVAT70kiểm tra và PDF đã chạy ở56, engine nghiệp vụ giữ nguyên; không cộng lại thành test57 mới.
+
+Chưa nghiệm thu toàn ERP, mọi35backendroute/8oracle dữ liệu đầy đủ,44SQLgốc vẫn thiếu/0khôi phục; Windows sạch, UAC/bộ cài thật, hai Windowsuser thật, Office, máy in, DPI/mạng/quyền công ty. Không tuyên bố crash/power-loss recovery hoặc mọi trường hợp mất điện đã được kiểm thử; hoàn tác có kiểm tra với lỗi I/O được tiêm trong lab.

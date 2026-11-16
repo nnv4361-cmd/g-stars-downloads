@@ -1,5 +1,10 @@
 # Thay đổi
 
+## 2026.11.16.57
+
+Cập nhật ngay trong G-Stars: tải, xác minh, đóng an toàn, áp dụng và mở lại. Portable thay file/hoàn tác; bản cài tự gọi Setup passive, tôn trọng UAC. Giữ cấu hình SQL và tài khoản Carsoft; không cài nền khi đang làm việc. Bản56 cần bootstrap57 một lần. Engine nghiệp vụ giữ nguyên56.
+
+
 ## 2026.11.16.56
 
 IT cấu hình một lần cho cả máy; giữ tài khoản/quyền Carsoft và cấu hình cũ. Sửa lỗi Crystal subreport làm báo giá không xem/in được. Tăng cỡ và độ tương phản chữ nhỏ, giữ trường và cách thao tác. Engine nghiệp vụ giữ nguyên so55. Kiểm thử trên backup riêng; cần IT thử lại máy in và màn hình thực tế.

@@ -2,26 +2,26 @@
 
 Client Windows dùng database Carsoft trên SQL Server TEST.
 
-**Phiên bản hiện tại: 2026.11.16.56.** IT cấu hình kết nối một lần trên mỗi máy; nhân viên mở G-Stars và đăng nhập bằng tài khoản Carsoft có sẵn. Quyền nghiệp vụ và đơn vị được phép vẫn lấy từ database.
+**Phiên bản hiện tại:2026.11.16.57.** Có nút cập nhật ngay trong ứng dụng: tự tải, kiểm tra file, nâng phiên bản và mở lại; giữ cấu hình SQL và đăng nhập đã ghi nhớ.
 
-[Tải bộ cài mới nhất](https://github.com/nnv4361-cmd/g-stars-downloads/releases/latest/download/G-Stars-Setup.exe) · [Các bản phát hành](https://github.com/nnv4361-cmd/g-stars-downloads/releases) · [Thay đổi](CHANGELOG.md)
+[Tải Setup mới nhất](https://github.com/nnv4361-cmd/g-stars-downloads/releases/latest/download/G-Stars-Setup.exe) · [Các bản phát hành](https://github.com/nnv4361-cmd/g-stars-downloads/releases) · [Thay đổi](CHANGELOG.md)
 
-Link tải cố định, không cần tài khoản GitHub. Repository tải không chứa backup, dữ liệu công ty, mật khẩu kết nối hoặc source ứng dụng.
+Link cố định, không cần tài khoản GitHub. Repository tải không có backup, dữ liệu công ty, SQL credential hoặc source ứng dụng.
 
-1. IT cài G-Stars, mở **Thiết lập kết nối** bằng quyền quản trị và lưu cấu hình SQL TEST.
-2. Nhân viên mở G-Stars, chọn đơn vị được phép và đăng nhập bằng tài khoản Carsoft.
-3. Gửi lỗi ngay trong G-Stars; không cần tài khoản GitHub.
+1. IT cài G-Stars và lưu kết nối một lần trên mỗi máy.
+2. Nhân viên đăng nhập bằng tài khoản Carsoft hiện có; quyền và đơn vị lấy từ database.
+3. Từ bản57, mở nút **v... → Kiểm tra bản mới → Cập nhật** khi có phiên bản mới. Lưu và đóng các màn nghiệp vụ trước; ứng dụng không tự lưu/ghi sổ thay nhân viên. Windows vẫn có thể yêu cầu quyền quản trị.
 
-Bản56 sửa lỗi xem/in báo giá liên quan báo cáo con Crystal; tăng chữ nhỏ lên 9pt và làm rõ màu chữ. Giữ nguyên các trường, menu và cách thao tác nghiệp vụ. Cấu hình kết nối cũ được giữ khi nâng phiên bản.
+Bản56 trở về trước cần cài57 một lần để có chức năng này. [Cách cập nhật](docs/PHIEN-BAN-VA-CAP-NHAT.md).
 
 | Nội dung | Hướng dẫn |
 | --- | --- |
-| IT thiết lập một lần | [Hướng dẫn IT](docs/HUONG-DAN-IT.md) |
-| Nhân viên sử dụng | [Hướng dẫn nhân viên](docs/HUONG-DAN-NHAN-VIEN.md) |
-| Cập nhật từ bản đang dùng | [Phiên bản và cập nhật](docs/PHIEN-BAN-VA-CAP-NHAT.md) |
+| IT thiết lập kết nối | [Hướng dẫn IT](docs/HUONG-DAN-IT.md) |
+| Nhân viên bắt đầu | [Hướng dẫn nhân viên](docs/HUONG-DAN-NHAN-VIEN.md) |
+| Cập nhật tự động | [Cập nhật](docs/PHIEN-BAN-VA-CAP-NHAT.md) |
 | Kết nối gặp lỗi | [Gỡ lỗi](docs/GO-LOI-KET-NOI.md) |
-| Thay đổi bản56 | [Bản sửa56](docs/BAN-SUA-56.md) |
-| Bằng chứng và giới hạn | [Kiểm thử](docs/TINH-TRANG-KIEM-THU.md) |
+| Bản57 và giới hạn | [Bản57](docs/BAN-SUA-57.md) |
+| Kiểm thử | [Kết quả](docs/TINH-TRANG-KIEM-THU.md) |
 | Gửi báo lỗi | [Báo lỗi](docs/BAO-LOI.md) |
 
-Không yêu cầu schema client_lab, 177 hợp đồng lab, VIEW DEFINITION hoặc marker UAT để kết nối thông thường. Chỉ dùng backup có cấu trúc phù hợp với phiên bản Carsoft cung cấp cho dự án. Chưa chứng nhận toàn ERP hoặc mọi phiên bản backup;44 thân SQL gốc vẫn thiếu. Không tự chuyển sang database vận hành.
+Không cần client_lab,177hợp đồng lab,VIEW DEFINITION hoặc marker UAT khi kết nối thông thường. Chỉ dùng SQL TEST phù hợp. Chưa chứng nhận toàn ERP/mọi phiên bản backup;44thân SQL gốc còn thiếu.

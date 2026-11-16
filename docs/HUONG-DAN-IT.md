@@ -20,10 +20,14 @@ Không copy file mã hóa sang máy khác. IT thiết lập từng máy hoặc t
 
 Cấu hình cá nhân của bản trước vẫn là đường tương thích nếu chưa có cấu hình chung. Bản cập nhật giữ định dạng cũ và không tự xóa/đổi server, database hay mật khẩu. Khi đã có cấu hình chung thì cấu hình IT được ưu tiên. [Cách cập nhật](PHIEN-BAN-VA-CAP-NHAT.md).
 
+## Cập nhật trong ứng dụng
+
+Từ57, nhân viên bấm Cập nhật để tải và áp dụng bản mới. Bản cài yêu cầu UAC khi cần; IT xác nhận, không tắt UAC hoặc cấp quyền quản trị nghiệp vụ. Cấu hình ProgramData/LocalAppData được giữ; không cần nhập lại SQL. Bản56 phải cài57 một lần. [Quy trình](PHIEN-BAN-VA-CAP-NHAT.md).
+
 ## Điều kiện môi trường
 
 Setup kiểm tra .NET Framework4.8 và Crystal x86 phù hợp; prerequisite có thể cần quyền quản trị hoặc restart. Không cần cài SQL Server trên từng máy nếu dùng server TEST. Những chức năng Office vẫn cần Office tương thích. Bộ cài chưa ký số; đối chiếu SHA256 của release theo chính sách IT.
 
 Giữ TLS và chứng chỉ phù hợp; không tự mở SQL ra Internet. Khác LAN cần tuyến mạng/VPN được IT cho phép. Windows/domain và mạng công ty chưa được dự án truy cập để nghiệm thu.
 
-Không cần cài client_lab/177 procedure, cấp VIEW DEFINITION hoặc đánh dấu UAT chỉ để kết nối bản56. Client kiểm tra cấu trúc thực tế và không tự cài schema/reset dữ liệu. Backup khác cấu trúc hoặc thiếu SQL gốc vẫn có thể không chạy một số chức năng. [Phạm vi kiểm thử](TINH-TRANG-KIEM-THU.md).
+Không cần cài client_lab/177 procedure, cấp VIEW DEFINITION hoặc đánh dấu UAT chỉ để kết nối bản57. Client kiểm tra cấu trúc thực tế và không tự cài schema/reset dữ liệu. Backup khác cấu trúc hoặc thiếu SQL gốc vẫn có thể không chạy một số chức năng. [Phạm vi kiểm thử](TINH-TRANG-KIEM-THU.md).
