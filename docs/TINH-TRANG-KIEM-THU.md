@@ -1,15 +1,15 @@
-# Kiểm thử G-Stars58
+# Kiểm thử G-Stars59
 
-[Trang chính](../README.md) · [Bản58](BAN-SUA-58.md) · [Cập nhật](PHIEN-BAN-VA-CAP-NHAT.md)
+[Trang chính](../README.md) · [Bản59](BAN-SUA-59.md) · [Cập nhật](PHIEN-BAN-VA-CAP-NHAT.md)
 
-| Phạm vi | Kết quả/phương pháp |
+| Nhóm | Bằng chứng |
 |---|---|
-| Core updater |72kiểm tra lỗi file/hash/path/rollback/đóng/hủy, fake installer/UACcancel |
-| Crash portable |43kiểm tra ngắt tiến trình con thật: stage, thay file, commit, cả hai tiến trình và phục hồi lạnh |
-| Phiên bản/feed |23kiểm tra chính sách; gói/feed tải từ GitHub chính thức |
-| Luồng57→58 |Control cập nhật thật của assembly57; worker thử chỉ đổi kiểm tra parent sang probe sở hữu và restart chẩn đoán. Login/menu sau cập nhật chạy trên SQL backup riêng |
-| Cấu hình/ghi nhớ |File cấu hình không thuộc update; kiểm tra DPAPI user/machine và blob ghi nhớ cũ được bản mới giải mã, đăng nhập SQL lab, byte giữ nguyên |
-| Hồi quy |52tài khoản/quyền/8báo cáo,109mẫu native,17cấu hình máy,viewer/PDF báo giá |
-| Source/package |1.137C# tái build độc lập,323appfiles,334archive chỉ đọc và kiểm tra đồng bộ portable/GitHub |
+| Lỗi58 |Helper sản phẩm thật tái hiện xóa gói do tiến trình trùng và ghi đè kết quả do replay |
+| Sửa59 |Helper sản phẩm thật: trùng cùng phiên/hai phiên/ticket hỏng/replay đều từ chối và giữ dữ liệu của chủ phiên |
+| Crash mở rộng |12 nhóm/157kiểm tra với backup/journal/baseline hỏng, khóa/file sửa ngoài, retry/rollback ngắt, extraction/body-write ngắt |
+| Hồi quy crash |43checks cũ và Main59 thật phục hồi sau dual-kill |
+| Core/policy |72core/23policy; branch installed chỉ fake handoff, chưa MSI/UAC thật |
+| SQL/UI |52auth/8reports,109samples,17machineprofile và viewer/PDF; fixture SQL Native55 riêng |
+| Source/package |1.137C# độc lập;323appfiles/334archive chỉ đọc; portable và GitHub cùng phiên bản |
 
-Crash test là ngắt tiến trình, không phải rút điện. Nhánh cài đặt thực tế/UAC/Windows sạch/hai Windowsuser/máy in vật lý cần IT pilot. Không dùng SQL công ty hay OpenClaw. Không phải nghiệm thu toànERP;44thân SQL gốc còn thiếu,35nhánh backend/8oracle đầy đủ vẫn cần mở rộng kiểm thử.
+Các ca ZIP/rollback/body-stream dùng QA pause có khai báo để ngắt đúng điểm; không thêm pause vào bản phát hành. Không fill disk, không shutdownWindows/SQL/OpenClaw, không SQL công ty. Chưa thử mất điện/hỏng đĩa/Windows sạch/installedUAC/mọi nghiệp vụ;44SQLgốc vẫn chưa khôi phục.

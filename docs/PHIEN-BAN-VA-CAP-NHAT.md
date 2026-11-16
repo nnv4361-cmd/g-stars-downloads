@@ -28,3 +28,7 @@ Bản cũ chỉ mở link tải. Cần cài bản57 một lần: **v... → Ki�
 Trước khi thay file, updater58 mở tiến trình giám sát riêng, lưu nhật ký và bản hoàn tác. Nếu tiến trình cập nhật bị tắt giữa chừng, tiến trình giám sát hoàn tác các file đã thay rồi mở lại bản cũ. Nếu đã hoàn tất thay file, giữ bản mới. Nếu cả hai tiến trình cùng bị tắt, client có thể phục hồi từ yêu cầu DPAPI còn lưu khi mở lại. Không xóa thư mục cache phục hồi trong lúc này.
 
 Kiểm thử ngắt tiến trình không phải thử mất điện, ổ đĩa hỏng hoặc hệ điều hành hỏng. Bản57 đã cài trước đó dùng updater57 để nâng lên58; cơ chế giám sát58 phục vụ những lần cập nhật do updater58 thực hiện. [Phạm vi bản58](BAN-SUA-58.md).
+
+## Bản59
+
+Chỉ worker đã giành quyền cập nhật mới được dọn gói và ghi kết quả. Tiến trình trùng, yêu cầu bị sửa hoặc yêu cầu đã hoàn tất bị từ chối mà không phá trạng thái phiên khác. Bản59 giữ cơ chế giám sát/hoàn tác58. [Các ca mở rộng](BAN-SUA-59.md).

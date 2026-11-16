@@ -1,3 +1,7 @@
+# G-Stars59 — 2026.11.16.59
+
+Sửa cleanup/result khi worker không sở hữu phiên; mở rộng12nhóm crash/157kiểm tra, giữ43checks cũ. [Chi tiết59](docs/BAN-SUA-59.md).
+
 # G-Stars58 — 2026.11.16.58
 
 Thêm giám sát/nhật ký phục hồi khi cập nhật portable bị ngắt tiến trình, giữ cấu hình SQL và ghi nhớ. [Chi tiết58](docs/BAN-SUA-58.md).
