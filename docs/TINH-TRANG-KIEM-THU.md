@@ -1,16 +1,15 @@
-# Kiểm thử G-Stars57
+# Kiểm thử G-Stars58
 
-[Trang chính](../README.md) · [Bản57](BAN-SUA-57.md)
+[Trang chính](../README.md) · [Bản58](BAN-SUA-58.md) · [Cập nhật](PHIEN-BAN-VA-CAP-NHAT.md)
 
-| Phạm vi | Bằng chứng |
-| --- | --- |
-| Core updater |72kiểm tra: tải đủ/thiếu/quá kích thước/saihash/hủy, metadata giả, traversal/tên file/duplicate ZIP, SQL sentinel, thay file, lỗi giữa chừng/hoàn tác/file khóa/xung đột tài liệu, close-cancel/commit và DPAPI ticket |
-| Cài đặt |Handoff bộ cài kiểm tra callback giả lập, tham số passive/norestart, exitcode/UAC cancel giả; chưa chạy Setup/MSIapply/UAC thật trong lab |
-| Portable |Core thao tác file thật trên fixture riêng. Gói phát hành được kiểm tra từng hash; bằng chứng worker tải gói công khai/thay file/khởi động diagnostic được ghi riêng trong dự án, không chạy đăng nhập công ty |
-| SQL và giao diện |52kiểm tra tài khoản/quyền/8báo cáo,17cấu hình IT,109mẫu native, xem/PDF báo giá từ backup riêng; engine và logic lưu chứng từ giữ nguyên56 |
-| Nguồn |1.136C# tái build độc lập đúng host/engine/worker/runtime;1075source gốc giữ nguyên |
-| Đóng gói |323appfiles,334kiểm tra archive và334release-sync theo số file;5asset gồm Setup, hướng dẫn, SHA256 và gói update |
+| Phạm vi | Kết quả/phương pháp |
+|---|---|
+| Core updater |72kiểm tra lỗi file/hash/path/rollback/đóng/hủy, fake installer/UACcancel |
+| Crash portable |43kiểm tra ngắt tiến trình con thật: stage, thay file, commit, cả hai tiến trình và phục hồi lạnh |
+| Phiên bản/feed |23kiểm tra chính sách; gói/feed tải từ GitHub chính thức |
+| Luồng57→58 |Control cập nhật thật của assembly57; worker thử chỉ đổi kiểm tra parent sang probe sở hữu và restart chẩn đoán. Login/menu sau cập nhật chạy trên SQL backup riêng |
+| Cấu hình/ghi nhớ |File cấu hình không thuộc update; kiểm tra DPAPI user/machine và blob ghi nhớ cũ được bản mới giải mã, đăng nhập SQL lab, byte giữ nguyên |
+| Hồi quy |52tài khoản/quyền/8báo cáo,109mẫu native,17cấu hình máy,viewer/PDF báo giá |
+| Source/package |1.137C# tái build độc lập,323appfiles,334archive chỉ đọc và kiểm tra đồng bộ portable/GitHub |
 
-Chỉ dùng SQLbackup scenario dự án, không truy cập SQL công ty/OpenClaw; không thêm SQLcopy/backup hoặc đổi runtime toàn hệ thống.455định nghĩa giữ hash (424nghiệp vụ+31helper), audit/fixture được bảo toàn theo phạm vi test. Các giao dịch normal/NVAT70kiểm tra và PDF đã chạy ở56, engine nghiệp vụ giữ nguyên; không cộng lại thành test57 mới.
-
-Chưa nghiệm thu toàn ERP, mọi35backendroute/8oracle dữ liệu đầy đủ,44SQLgốc vẫn thiếu/0khôi phục; Windows sạch, UAC/bộ cài thật, hai Windowsuser thật, Office, máy in, DPI/mạng/quyền công ty. Không tuyên bố crash/power-loss recovery hoặc mọi trường hợp mất điện đã được kiểm thử; hoàn tác có kiểm tra với lỗi I/O được tiêm trong lab.
+Crash test là ngắt tiến trình, không phải rút điện. Nhánh cài đặt thực tế/UAC/Windows sạch/hai Windowsuser/máy in vật lý cần IT pilot. Không dùng SQL công ty hay OpenClaw. Không phải nghiệm thu toànERP;44thân SQL gốc còn thiếu,35nhánh backend/8oracle đầy đủ vẫn cần mở rộng kiểm thử.

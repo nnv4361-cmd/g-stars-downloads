@@ -1,3 +1,7 @@
+# G-Stars58 — 2026.11.16.58
+
+Thêm giám sát/nhật ký phục hồi khi cập nhật portable bị ngắt tiến trình, giữ cấu hình SQL và ghi nhớ. [Chi tiết58](docs/BAN-SUA-58.md).
+
 # Thay đổi
 
 ## 2026.11.16.57

@@ -22,3 +22,9 @@ Bản cũ chỉ mở link tải. Cần cài bản57 một lần: **v... → Ki�
 [Setup cố định](https://github.com/nnv4361-cmd/g-stars-downloads/releases/latest/download/G-Stars-Setup.exe). Bộ cài chưa ký số; metadata và digest lấy từ nguồn GitHub chính thức qua HTTPS. Người dùng không đăng nhập GitHub, không nhập khóa. Gói `G-Stars-Update.zip` dành cho updater, không thay thế bộ cài prerequisite cho máy mới.
 
 [Phạm vi kiểm thử](TINH-TRANG-KIEM-THU.md) phân biệt thay file portable thực tế với nhánh bộ cài/UAC cần IT pilot.
+
+## Phục hồi sự cố từ bản58
+
+Trước khi thay file, updater58 mở tiến trình giám sát riêng, lưu nhật ký và bản hoàn tác. Nếu tiến trình cập nhật bị tắt giữa chừng, tiến trình giám sát hoàn tác các file đã thay rồi mở lại bản cũ. Nếu đã hoàn tất thay file, giữ bản mới. Nếu cả hai tiến trình cùng bị tắt, client có thể phục hồi từ yêu cầu DPAPI còn lưu khi mở lại. Không xóa thư mục cache phục hồi trong lúc này.
+
+Kiểm thử ngắt tiến trình không phải thử mất điện, ổ đĩa hỏng hoặc hệ điều hành hỏng. Bản57 đã cài trước đó dùng updater57 để nâng lên58; cơ chế giám sát58 phục vụ những lần cập nhật do updater58 thực hiện. [Phạm vi bản58](BAN-SUA-58.md).
