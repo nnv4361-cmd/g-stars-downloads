@@ -1,3 +1,9 @@
+# Thay đổi
+
+## 2026.11.16.56
+
+IT cấu hình một lần cho cả máy; giữ tài khoản/quyền Carsoft và cấu hình cũ. Sửa lỗi Crystal subreport làm báo giá không xem/in được. Tăng cỡ và độ tương phản chữ nhỏ, giữ trường và cách thao tác. Engine nghiệp vụ giữ nguyên so55. Kiểm thử trên backup riêng; cần IT thử lại máy in và màn hình thực tế.
+
 # Lịch sử phát hành
 
 [Về trang chính](README.md) · [Bản mới nhất](https://github.com/nnv4361-cmd/g-stars-downloads/releases/latest)

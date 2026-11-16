@@ -1,27 +1,27 @@
 # G-Stars
 
-Client Windows phục vụ kiểm thử trên SQL Server TEST đã restore backup Carsoft.
+Client Windows dùng database Carsoft trên SQL Server TEST.
 
-**Phiên bản hiện tại: 2026.11.16.55.** Dùng lại tài khoản, mật khẩu và quyền nghiệp vụ trong database Carsoft. Đường chạy thông thường không yêu cầu schema `client_lab`, 177 hợp đồng lab, quyền `VIEW DEFINITION` hay dấu UAT.
+**Phiên bản hiện tại: 2026.11.16.56.** IT cấu hình kết nối một lần trên mỗi máy; nhân viên mở G-Stars và đăng nhập bằng tài khoản Carsoft có sẵn. Quyền nghiệp vụ và đơn vị được phép vẫn lấy từ database.
 
-[Tải G-Stars-Setup.exe mới nhất](https://github.com/nnv4361-cmd/g-stars-downloads/releases/latest/download/G-Stars-Setup.exe) · [Các bản phát hành](https://github.com/nnv4361-cmd/g-stars-downloads/releases) · [Thay đổi](CHANGELOG.md)
+[Tải bộ cài mới nhất](https://github.com/nnv4361-cmd/g-stars-downloads/releases/latest/download/G-Stars-Setup.exe) · [Các bản phát hành](https://github.com/nnv4361-cmd/g-stars-downloads/releases) · [Thay đổi](CHANGELOG.md)
 
-Link tải cố định, không cần tài khoản GitHub. Repository này chứa bộ cài và hướng dẫn; không có backup, dữ liệu công ty, mật khẩu SQL hay application source.
+Link tải cố định, không cần tài khoản GitHub. Repository tải không chứa backup, dữ liệu công ty, mật khẩu kết nối hoặc source ứng dụng.
 
-1. IT restore backup Carsoft tương thích vào SQL Server TEST và cấp quyền kết nối.
-2. Cài G-Stars; trong **Chọn SQL**, chọn máy chủ và database, kiểm tra rồi lưu cấu hình.
-3. Đăng nhập bằng tài khoản Carsoft có sẵn trong database. Quyền và đơn vị được phép vẫn lấy từ SQL.
+1. IT cài G-Stars, mở **Thiết lập kết nối** bằng quyền quản trị và lưu cấu hình SQL TEST.
+2. Nhân viên mở G-Stars, chọn đơn vị được phép và đăng nhập bằng tài khoản Carsoft.
+3. Gửi lỗi ngay trong G-Stars; không cần tài khoản GitHub.
 
-Windows Authentication là mặc định khi IT đã cấu hình quyền Windows trên server; không nhập tài khoản SQL trong chế độ này. SQL Authentication vẫn có nếu môi trường cần. Client không bỏ xác thực SQL Server hoặc tự cấp quyền quản trị.
+Bản56 sửa lỗi xem/in báo giá liên quan báo cáo con Crystal; tăng chữ nhỏ lên 9pt và làm rõ màu chữ. Giữ nguyên các trường, menu và cách thao tác nghiệp vụ. Cấu hình kết nối cũ được giữ khi nâng phiên bản.
 
 | Nội dung | Hướng dẫn |
 | --- | --- |
-| IT cấu hình SQL và cài đặt | [Hướng dẫn IT](docs/HUONG-DAN-IT.md) |
-| Nhân viên bắt đầu thử | [Hướng dẫn nhân viên](docs/HUONG-DAN-NHAN-VIEN.md) |
-| Lỗi kết nối/đăng nhập/quyền | [Gỡ lỗi](docs/GO-LOI-KET-NOI.md) |
-| Bản55 bỏ phụ thuộc lab như thế nào | [SQL Carsoft native](docs/NATIVE-55.md) |
-| Kết quả và giới hạn | [Phạm vi kiểm thử](docs/TINH-TRANG-KIEM-THU.md) |
-| Gửi bug từ phần mềm | [Báo lỗi](docs/BAO-LOI.md) |
-| Phiên bản/cập nhật | [Cập nhật](docs/PHIEN-BAN-VA-CAP-NHAT.md) |
+| IT thiết lập một lần | [Hướng dẫn IT](docs/HUONG-DAN-IT.md) |
+| Nhân viên sử dụng | [Hướng dẫn nhân viên](docs/HUONG-DAN-NHAN-VIEN.md) |
+| Cập nhật từ bản đang dùng | [Phiên bản và cập nhật](docs/PHIEN-BAN-VA-CAP-NHAT.md) |
+| Kết nối gặp lỗi | [Gỡ lỗi](docs/GO-LOI-KET-NOI.md) |
+| Thay đổi bản56 | [Bản sửa56](docs/BAN-SUA-56.md) |
+| Bằng chứng và giới hạn | [Kiểm thử](docs/TINH-TRANG-KIEM-THU.md) |
+| Gửi báo lỗi | [Báo lỗi](docs/BAO-LOI.md) |
 
-Backup khác ngày nhưng cùng cấu trúc được hỗ trợ là mục tiêu tương thích. Không cam kết mọi phiên bản Carsoft khác cấu trúc, mọi luồng nghiệp vụ hay toàn bộ SQL gốc đã được khôi phục. Đây là bản TEST; không tự chuyển sang database đang vận hành.
+Không yêu cầu schema client_lab, 177 hợp đồng lab, VIEW DEFINITION hoặc marker UAT để kết nối thông thường. Chỉ dùng backup có cấu trúc phù hợp với phiên bản Carsoft cung cấp cho dự án. Chưa chứng nhận toàn ERP hoặc mọi phiên bản backup;44 thân SQL gốc vẫn thiếu. Không tự chuyển sang database vận hành.

@@ -1,33 +1,29 @@
-# Hướng dẫn IT · G-Stars55
+# IT thiết lập G-Stars
 
-[Trang chính](../README.md) · [Gỡ lỗi](GO-LOI-KET-NOI.md) · [Phạm vi kiểm thử](TINH-TRANG-KIEM-THU.md)
+[Trang chính](../README.md) · [Gỡ lỗi](GO-LOI-KET-NOI.md)
 
-## Chuẩn bị một lần
+## Thiết lập một lần trên mỗi máy
 
-1. Restore backup Carsoft vào SQL Server TEST riêng, giữ dữ liệu vận hành tách biệt. Chọn backup cùng cấu trúc với client Carsoft đã cung cấp cho dự án.
-2. Cấp quyền kết nối database và quyền dữ liệu/thực thi nghiệp vụ cần thiết. Bản55 không yêu cầu `client_lab`, `VIEW DEFINITION`, các marker `GStarsEnvironment`/`GStarsDatabaseId` hoặc cài thêm 177 procedure. Không chạy script đánh dấu UAT chỉ để đăng nhập bản55.
-3. Cài thử trên một máy, xác minh đăng nhập, đúng đơn vị, lưu/mở lại chứng từ và xuất PDF trước khi phát rộng.
+1. Restore backup Carsoft phù hợp vào SQL Server TEST. Cấp quyền kết nối, truy cập dữ liệu và thực thi nghiệp vụ cho danh tính kết nối do IT quản lý.
+2. Cài G-Stars rồi mở **Cau-hinh-SQL / Thiết lập kết nối**, hoặc chạy `G-stars.exe --configure-sql`. Windows sẽ yêu cầu quyền quản trị khi cần.
+3. Nhập máy chủ (`IP`, `IP,cổng` hoặc `SERVER\INSTANCE`), database và thông tin kết nối SQL TEST mà IT đã sử dụng thành công. SQL Server là lựa chọn mặc định trong màn thiết lập IT; tùy chọn Windows vẫn dành cho môi trường đã cấp quyền Windows.
+4. Bấm **Kiểm tra kết nối → Lưu cấu hình**. Cấu hình được áp dụng cho mọi người dùng Windows trên máy đó. Mở lại G-Stars sau khi đổi kết nối.
+5. Nhân viên chỉ nhập tài khoản Carsoft và chọn đơn vị được phép tại màn đăng nhập. Không cấp thêm tài khoản nghiệp vụ hoặc nâng quyền trong database để ép chạy.
 
-## Cấu hình trong G-Stars
+Tài khoản kết nối máy chủ do IT cấu hình; tên/mật khẩu/quyền nghiệp vụ lấy từ `HT_NguoiDung`, `HT_Security` và dữ liệu Carsoft. Nhân viên không phải chọn kiểu xác thực hay nhập tài khoản kết nối SQL mỗi lần làm việc.
 
-Mở **Chọn SQL** tại màn đăng nhập. Nhập `IP`, `IP,cổng` hoặc `SERVER\INSTANCE`, chọn đúng database Carsoft TEST rồi bấm **Kiểm tra kết nối → Lưu cấu hình**. Có thể gõ chính xác tên database nếu không dùng danh sách. Cấu hình mới có hiệu lực khi mở phiên tiếp theo.
+## Cấu hình và cập nhật
 
-**Windows Authentication** là mặc định. SQL Server phải chấp nhận tài khoản/nhóm Windows của người chạy G-Stars; IT kiểm tra domain/trust/SPN/chính sách nếu môi trường dùng chúng. Client dùng danh tính Windows hiện tại và không cần nhập tên/mật khẩu SQL. Đường Windows/domain tại công ty chưa được dự án truy cập để nghiệm thu.
+Cấu hình chung nằm tại `%ProgramData%\G-Stars\connection-machine-v1.dpapi`, mã hóa theo máy. Administrators/SYSTEM được sửa; người dùng Windows trên máy có quyền đọc để client kết nối. Dùng danh tính SQL có quyền tối thiểu phù hợp, không đóng sysadmin trong cấu hình. Cơ chế này không giữ bí mật trước người có quyền chạy client trên máy.
 
-**SQL Authentication** vẫn có nếu môi trường không dùng được Windows integrated authentication. SQL login do IT quản lý; nhân viên không phải tự tạo tài khoản. Client vẫn phải xác thực với SQL Server. Bộ cài công khai không chứa credential dùng chung.
+Không copy file mã hóa sang máy khác. IT thiết lập từng máy hoặc triển khai cấu hình bằng công cụ quản trị nội bộ theo chính sách của mình. File xuất JSON chỉ mang thông tin không có mật khẩu.
 
-**Đăng nhập nghiệp vụ:** dùng tên/mật khẩu có sẵn trong `HT_NguoiDung`; quyền menu/thao tác từ `HT_Security`, cờ nghiệp vụ và đơn vị được phép theo dữ liệu Carsoft. Không tạo một admin G-Stars mới hoặc đổi quyền của tài khoản trong backup để ép sử dụng. Admin nghiệp vụ khác sysadmin của SQL Server.
+Cấu hình cá nhân của bản trước vẫn là đường tương thích nếu chưa có cấu hình chung. Bản cập nhật giữ định dạng cũ và không tự xóa/đổi server, database hay mật khẩu. Khi đã có cấu hình chung thì cấu hình IT được ưu tiên. [Cách cập nhật](PHIEN-BAN-VA-CAP-NHAT.md).
 
-**Nâng cao:** cổng, đơn vị mặc định và TLS. TLS bật mặc định, giữ kiểm tra chứng chỉ. IT xử lý chứng chỉ và tên server theo chính sách của mình; không thay runtime/registry toàn hệ thống để bỏ kiểm tra. Cổng mặc định1433 chỉ đúng khi SQL Server thực sự dùng cổng đó.
+## Điều kiện môi trường
 
-## Cài và phát cho nhiều máy
+Setup kiểm tra .NET Framework4.8 và Crystal x86 phù hợp; prerequisite có thể cần quyền quản trị hoặc restart. Không cần cài SQL Server trên từng máy nếu dùng server TEST. Những chức năng Office vẫn cần Office tương thích. Bộ cài chưa ký số; đối chiếu SHA256 của release theo chính sách IT.
 
-Tải [Setup mới nhất](https://github.com/nnv4361-cmd/g-stars-downloads/releases/latest/download/G-Stars-Setup.exe). Setup kiểm tra .NET Framework4.8 và SAP Crystal x86 phù hợp; prerequisite có thể cần quyền quản trị/restart. Không cài SQL Server ở mỗi máy khi đã dùng server TEST. Các chức năng Office vẫn cần Office phù hợp. Bộ cài chưa ký số; đối chiếu SHA256 của release theo chính sách công ty.
+Giữ TLS và chứng chỉ phù hợp; không tự mở SQL ra Internet. Khác LAN cần tuyến mạng/VPN được IT cho phép. Windows/domain và mạng công ty chưa được dự án truy cập để nghiệm thu.
 
-IT có thể xuất/nhập cấu hình máy chủ/database không có mật khẩu, xem [mẫu Windows](../examples/G-Stars.connection.json). Windows Authentication dùng quyền Windows của từng người/nhóm; SQL Authentication cần cấu hình mật khẩu tại đúng hồ sơ Windows chạy ứng dụng. Không copy file DPAPI giữa người dùng/máy; không gửi mật khẩu qua GitHub/chat.
-
-## Giới hạn tương thích
-
-Client kiểm tra cấu trúc thực tế rồi dùng SQL Carsoft gốc; tám báo cáo bổ sung cần thiết được xử lý bằng truy vấn có tham số trong client, không cài schema. Backup khác ngày cùng cấu trúc có thể có số liệu/quyền/đơn vị khác nhau. Backup khác phiên bản hoặc thiếu SQL gốc vẫn có thể không chạy một số chức năng; không tự ghi đè schema hay tạo procedure rỗng.
-
-[Ghi chú kỹ thuật bản55](NATIVE-55.md). Cần IT pilot trên mạng/quyền thực tế; kết quả lab không thay thế nghiệm thu toàn hệ thống.
+Không cần cài client_lab/177 procedure, cấp VIEW DEFINITION hoặc đánh dấu UAT chỉ để kết nối bản56. Client kiểm tra cấu trúc thực tế và không tự cài schema/reset dữ liệu. Backup khác cấu trúc hoặc thiếu SQL gốc vẫn có thể không chạy một số chức năng. [Phạm vi kiểm thử](TINH-TRANG-KIEM-THU.md).
