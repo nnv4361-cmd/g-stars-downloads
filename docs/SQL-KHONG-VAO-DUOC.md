@@ -1,3 +1,5 @@
+> Tài liệu lịch sử cho bản52. Bản55 bỏ điều kiện177hợp đồng/VIEW DEFINITION/markerUAT khi đăng nhập; xem [hướng dẫn hiện tại](HUONG-DAN-IT.md). Không áp dụng các bước chuẩn bị contractlab dưới đây cho bản55.
+
 # Đã tới SQL nhưng bị chặn tương thích
 
 [Hướng dẫn IT](HUONG-DAN-IT.md) · [Gỡ lỗi kết nối](GO-LOI-KET-NOI.md)

@@ -1,84 +1,33 @@
-# Hướng dẫn IT
+# Hướng dẫn IT · G-Stars55
 
-[Về trang chính](../README.md) · [Gỡ lỗi](GO-LOI-KET-NOI.md) · [Nhân viên](HUONG-DAN-NHAN-VIEN.md)
+[Trang chính](../README.md) · [Gỡ lỗi](GO-LOI-KET-NOI.md) · [Phạm vi kiểm thử](TINH-TRANG-KIEM-THU.md)
 
-## Trước khi phát cho nhân viên
+## Chuẩn bị một lần
 
-Chuẩn bị SQL TEST tương thích, chọn cách xác thực, cài thử trên một máy và kiểm tra kết nối trước khi phát rộng. G-Stars kết nối trực tiếp đến SQL Server đang chạy; bộ cài không cài SQL Server hoặc restore một file `.bak` tự động.
+1. Restore backup Carsoft vào SQL Server TEST riêng, giữ dữ liệu vận hành tách biệt. Chọn backup cùng cấu trúc với client Carsoft đã cung cấp cho dự án.
+2. Cấp quyền kết nối database và quyền dữ liệu/thực thi nghiệp vụ cần thiết. Bản55 không yêu cầu `client_lab`, `VIEW DEFINITION`, các marker `GStarsEnvironment`/`GStarsDatabaseId` hoặc cài thêm 177 procedure. Không chạy script đánh dấu UAT chỉ để đăng nhập bản55.
+3. Cài thử trên một máy, xác minh đăng nhập, đúng đơn vị, lưu/mở lại chứng từ và xuất PDF trước khi phát rộng.
 
-## Cài bộ client
+## Cấu hình trong G-Stars
 
-- Windows 10/11; ứng dụng và Crystal chạy x86, kể cả khi Windows là 64-bit.
-- Bộ cài có phần kiểm tra/cài .NET Framework 4.8 và Crystal x86 phù hợp. Một phiên bản Crystal khác có thể bị chặn để IT kiểm tra, không tự hạ bản runtime dùng chung.
-- Những thao tác phụ thuộc Microsoft Office vẫn cần Office phù hợp trên máy.
-- Bộ cài G-Stars chưa ký số. Kiểm tra SHA256 và chính sách công ty; không hướng dẫn người dùng bỏ qua cảnh báo bảo mật chưa được IT xác minh.
+Mở **Chọn SQL** tại màn đăng nhập. Nhập `IP`, `IP,cổng` hoặc `SERVER\INSTANCE`, chọn đúng database Carsoft TEST rồi bấm **Kiểm tra kết nối → Lưu cấu hình**. Có thể gõ chính xác tên database nếu không dùng danh sách. Cấu hình mới có hiệu lực khi mở phiên tiếp theo.
 
-Đối chiếu file với [SHA256SUMS.txt của release](https://github.com/nnv4361-cmd/g-stars-downloads/releases/latest/download/SHA256SUMS.txt):
+**Windows Authentication** là mặc định. SQL Server phải chấp nhận tài khoản/nhóm Windows của người chạy G-Stars; IT kiểm tra domain/trust/SPN/chính sách nếu môi trường dùng chúng. Client dùng danh tính Windows hiện tại và không cần nhập tên/mật khẩu SQL. Đường Windows/domain tại công ty chưa được dự án truy cập để nghiệm thu.
 
-```powershell
-Get-FileHash .\G-Stars-Setup.exe -Algorithm SHA256
-```
+**SQL Authentication** vẫn có nếu môi trường không dùng được Windows integrated authentication. SQL login do IT quản lý; nhân viên không phải tự tạo tài khoản. Client vẫn phải xác thực với SQL Server. Bộ cài công khai không chứa credential dùng chung.
 
-## Chẩn đoán lỗi thiếu hợp đồng SQL
+**Đăng nhập nghiệp vụ:** dùng tên/mật khẩu có sẵn trong `HT_NguoiDung`; quyền menu/thao tác từ `HT_Security`, cờ nghiệp vụ và đơn vị được phép theo dữ liệu Carsoft. Không tạo một admin G-Stars mới hoặc đổi quyền của tài khoản trong backup để ép sử dụng. Admin nghiệp vụ khác sysadmin của SQL Server.
 
-Nếu đã nhập máy chủ nhưng gặp lỗi “Thiếu hợp đồng SQL hoặc quyền VIEW DEFINITION”, làm theo [bộ kiểm tra chỉ đọc](SQL-KHONG-VAO-DUOC.md). Bộ cài52 chưa có migration backend đầy đủ cho backup Carsoft nguyên bản; đánh dấu UAT không thay thế bước đó.
+**Nâng cao:** cổng, đơn vị mặc định và TLS. TLS bật mặc định, giữ kiểm tra chứng chỉ. IT xử lý chứng chỉ và tên server theo chính sách của mình; không thay runtime/registry toàn hệ thống để bỏ kiểm tra. Cổng mặc định1433 chỉ đúng khi SQL Server thực sự dùng cổng đó.
 
-## Chuẩn bị database TEST
+## Cài và phát cho nhiều máy
 
-Database cần:
+Tải [Setup mới nhất](https://github.com/nnv4361-cmd/g-stars-downloads/releases/latest/download/G-Stars-Setup.exe). Setup kiểm tra .NET Framework4.8 và SAP Crystal x86 phù hợp; prerequisite có thể cần quyền quản trị/restart. Không cài SQL Server ở mỗi máy khi đã dùng server TEST. Các chức năng Office vẫn cần Office phù hợp. Bộ cài chưa ký số; đối chiếu SHA256 của release theo chính sách công ty.
 
-- Là bản TEST riêng, cho ghi, có cấu trúc Carsoft tương thích với bản G-Stars này.
-- Có **177 hợp đồng SQL `client_lab` đúng phiên bản**; client kiểm tra định nghĩa để tránh chạy nhầm phiên bản.
-- Có dấu môi trường `GStarsEnvironment=UAT` và mã `GStarsDatabaseId` hợp lệ.
-- Tài khoản kết nối được cấp quyền nghiệp vụ cần thiết và quyền xem định nghĩa các thành phần `client_lab`. Tài khoản dùng app không cần quyền SQL Server `sysadmin` chỉ để đăng nhập G-Stars.
+IT có thể xuất/nhập cấu hình máy chủ/database không có mật khẩu, xem [mẫu Windows](../examples/G-Stars.connection.json). Windows Authentication dùng quyền Windows của từng người/nhóm; SQL Authentication cần cấu hình mật khẩu tại đúng hồ sơ Windows chạy ứng dụng. Không copy file DPAPI giữa người dùng/máy; không gửi mật khẩu qua GitHub/chat.
 
-**Chỉ restore backup Carsoft gốc chưa chắc đáp ứng các điều kiện này.** Repo này không có backup hoặc bộ cài 177 hợp đồng. Nếu thiếu, nhận database UAT/bộ triển khai SQL tương thích từ người phụ trách dự án; không tạo procedure rỗng hoặc bỏ kiểm tra để đi tiếp.
+## Giới hạn tương thích
 
-Hai công cụ hỗ trợ:
+Client kiểm tra cấu trúc thực tế rồi dùng SQL Carsoft gốc; tám báo cáo bổ sung cần thiết được xử lý bằng truy vấn có tham số trong client, không cài schema. Backup khác ngày cùng cấu trúc có thể có số liệu/quyền/đơn vị khác nhau. Backup khác phiên bản hoặc thiếu SQL gốc vẫn có thể không chạy một số chức năng; không tự ghi đè schema hay tạo procedure rỗng.
 
-1. [Check-SQL-TEST.sql](../scripts/Check-SQL-TEST.sql): chạy trên database TEST đã chọn trong SSMS; chỉ đọc metadata để kiểm tra dấu TEST, cấu trúc tối thiểu và các tên thành phần/quyền còn thiếu. Không xác minh hash, không thay thế kiểm tra trong G-Stars.
-2. [IT-Mark-UAT.sql](../scripts/IT-Mark-UAT.sql): chỉ dùng khi đã xác nhận đúng database TEST. Sửa biến tên database và biến xác nhận đầu file rồi IT chạy thủ công. Script chỉ thêm dấu TEST/mã định danh, **không cài 177 hợp đồng** và không chuyển đổi database thành phiên bản tương thích.
-
-Từ bản 50, G-Stars tự đọc mã định danh khi kiểm tra kết nối. Nhân viên không phải ghi lại hoặc gõ mã này.
-
-## Cấu hình kết nối
-
-Mở **G-Stars → Chọn SQL**, hoặc **Start Menu → G-Stars - Chon SQL**.
-
-| Ô nhập | Cách dùng |
-| --- | --- |
-| Máy chủ | `192.0.2.10`, `192.0.2.10,1435` hoặc `SQL-TEST\SQLEXPRESS` — ví dụ, thay bằng địa chỉ thật |
-| Xác thực | Windows hoặc SQL Server, theo cấu hình SQL TEST |
-| Tài khoản/mật khẩu SQL | Chỉ nhập khi chọn SQL Server; không dùng tài khoản nghiệp vụ G-Stars thay cho SQL login |
-| Database test | Tải danh sách hoặc gõ chính xác tên database TEST |
-
-IP/tên máy không ghi cổng mặc định dùng 1433. `SERVER\INSTANCE` dùng cơ chế phân giải instance; nếu SQL Browser không dùng được, nhập `IP,cổng` thực tế. Không phải cổng nào cũng là 1433.
-
-Chọn **Kiểm tra kết nối → Lưu cấu hình**. Nếu thay đổi khi đang mở phiên nghiệp vụ, đóng/mở lại G-Stars sau khi lưu công việc.
-
-## Chọn kiểu xác thực
-
-**Windows Authentication:** dùng danh tính Windows đang chạy ứng dụng. IT phải cấp quyền cho tài khoản/nhóm Windows phù hợp và xác minh điều kiện domain/trust của môi trường. Client không cần tên hoặc mật khẩu SQL riêng. Đây không phải chế độ bỏ xác thực.
-
-**SQL Authentication:** dùng SQL login do IT quản lý. Không bắt buộc tạo một SQL login riêng cho mỗi nhân viên; chọn phương án và quyền theo chính sách công ty. Mật khẩu được nhập/lưu trong cấu hình của người dùng Windows, không đóng vào bộ cài công khai.
-
-**Tài khoản G-Stars:** đăng nhập vào nghiệp vụ sau khi kết nối database. Quyền admin trong G-Stars khác quyền quản trị SQL Server.
-
-## Nâng cao và TLS
-
-**Nâng cao** chứa cổng riêng (`0` là tự động theo ô Máy chủ), đơn vị mặc định và TLS. TLS bật mặc định, xác minh chứng chỉ được giữ. Khi lỗi chứng chỉ, kiểm tra CA tin cậy, chứng chỉ server và tên máy chủ; không tự tắt TLS hoặc đổi registry của toàn máy để xử lý một lỗi nhập IP.
-
-Kiểm tra cả SqlClient và OLE DB x86 trong client; việc kết nối được từ SSMS chưa đủ chứng minh đường driver của G-Stars đã sẵn sàng.
-
-## Phát cấu hình cho nhiều máy
-
-1. Trên một máy đã kiểm tra, chọn **Xuất cấu hình** để tạo `G-Stars.connection.json`; file không có mật khẩu.
-2. Cho nhân viên **Nhập cấu hình**, hoặc đặt file cạnh `app\G-stars.exe` theo quy trình triển khai của IT. Có [mẫu cấu hình Windows](../examples/G-Stars.connection.json) với địa chỉ minh họa.
-3. Windows Authentication cần quyền của từng người/nhóm Windows; SQL Authentication cần cấu hình mật khẩu tại đúng hồ sơ Windows sẽ chạy app, một lần.
-4. Không copy `%LOCALAPPDATA%\G-Stars\connection-v1.dpapi` giữa các tài khoản/máy. File được mã hóa theo người dùng Windows.
-
-Bộ cài không có sẵn địa chỉ, tài khoản SQL hoặc dữ liệu của công ty. Phần **Báo lỗi** đã cấu hình sẵn, không cần nhập khóa GitHub ở từng máy.
-
-## Kiểm tra tại công ty
-
-Thử kết nối từ máy nhân viên; đăng nhập, chọn đơn vị, đọc/lưu/mở lại chứng từ thử và in/xuất PDF với dữ liệu TEST. Kiểm tra hai người dùng, quyền và máy in cần dùng. Mạng/domain/chứng chỉ/quyền SQL công ty chưa được dự án truy cập kiểm chứng; xem [phạm vi kiểm thử](TINH-TRANG-KIEM-THU.md).
+[Ghi chú kỹ thuật bản55](NATIVE-55.md). Cần IT pilot trên mạng/quyền thực tế; kết quả lab không thay thế nghiệm thu toàn hệ thống.

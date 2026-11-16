@@ -1,41 +1,27 @@
 # G-Stars
 
-Phần mềm Windows — **bản thử nghiệm 2026.11.16.52**.
+Client Windows phục vụ kiểm thử trên SQL Server TEST đã restore backup Carsoft.
 
-**[Tải G-Stars-Setup.exe — bản mới nhất](https://github.com/nnv4361-cmd/g-stars-downloads/releases/latest/download/G-Stars-Setup.exe)** · khoảng 223 MB · Windows 10/11
+**Phiên bản hiện tại: 2026.11.16.55.** Dùng lại tài khoản, mật khẩu và quyền nghiệp vụ trong database Carsoft. Đường chạy thông thường không yêu cầu schema `client_lab`, 177 hợp đồng lab, quyền `VIEW DEFINITION` hay dấu UAT.
 
-[Xem Releases và checksum](https://github.com/nnv4361-cmd/g-stars-downloads/releases/latest) · [Những thay đổi](CHANGELOG.md)
+[Tải G-Stars-Setup.exe mới nhất](https://github.com/nnv4361-cmd/g-stars-downloads/releases/latest/download/G-Stars-Setup.exe) · [Các bản phát hành](https://github.com/nnv4361-cmd/g-stars-downloads/releases) · [Thay đổi](CHANGELOG.md)
 
-Không cần tài khoản GitHub để tải hoặc gửi báo lỗi. Link tải giữ nguyên khi phát hành bản mới.
+Link tải cố định, không cần tài khoản GitHub. Repository này chứa bộ cài và hướng dẫn; không có backup, dữ liệu công ty, mật khẩu SQL hay application source.
 
-## Bắt đầu
+1. IT restore backup Carsoft tương thích vào SQL Server TEST và cấp quyền kết nối.
+2. Cài G-Stars; trong **Chọn SQL**, chọn máy chủ và database, kiểm tra rồi lưu cấu hình.
+3. Đăng nhập bằng tài khoản Carsoft có sẵn trong database. Quyền và đơn vị được phép vẫn lấy từ SQL.
 
-1. **IT** chuẩn bị SQL TEST riêng và thông tin kết nối.
-2. **Nhân viên** tải bộ cài, cài G-Stars, nhận cấu hình từ IT rồi đăng nhập phần mềm.
-3. Gặp lỗi: bấm **Báo lỗi** hoặc **Ctrl + Shift + F12** trong G-Stars.
+Windows Authentication là mặc định khi IT đã cấu hình quyền Windows trên server; không nhập tài khoản SQL trong chế độ này. SQL Authentication vẫn có nếu môi trường cần. Client không bỏ xác thực SQL Server hoặc tự cấp quyền quản trị.
 
-| Cần làm gì? | Hướng dẫn |
+| Nội dung | Hướng dẫn |
 | --- | --- |
-| Xem phiên bản, kiểm tra/tải cập nhật | [Phiên bản và cập nhật](docs/PHIEN-BAN-VA-CAP-NHAT.md) |
-| Cài đặt, đăng nhập, cập nhật | [Dành cho nhân viên](docs/HUONG-DAN-NHAN-VIEN.md) |
-| Cấu hình SQL, cấp quyền, phát nhiều máy | [Dành cho IT](docs/HUONG-DAN-IT.md) |
-| Không kết nối được, lỗi IP/tài khoản/TLS/database | [Gỡ lỗi kết nối](docs/GO-LOI-KET-NOI.md) |
-| Gửi lỗi, mất mạng, mở phần mềm không được | [Báo lỗi](docs/BAO-LOI.md) |
-| Đợt rà mã nguồn và lỗi đã sửa ở bản52 | [Debug52](docs/DEBUG-52.md) |
-| Phạm vi đã kiểm thử và việc còn cần xác minh | [Tình trạng kiểm thử](docs/TINH-TRANG-KIEM-THU.md) |
+| IT cấu hình SQL và cài đặt | [Hướng dẫn IT](docs/HUONG-DAN-IT.md) |
+| Nhân viên bắt đầu thử | [Hướng dẫn nhân viên](docs/HUONG-DAN-NHAN-VIEN.md) |
+| Lỗi kết nối/đăng nhập/quyền | [Gỡ lỗi](docs/GO-LOI-KET-NOI.md) |
+| Bản55 bỏ phụ thuộc lab như thế nào | [SQL Carsoft native](docs/NATIVE-55.md) |
+| Kết quả và giới hạn | [Phạm vi kiểm thử](docs/TINH-TRANG-KIEM-THU.md) |
+| Gửi bug từ phần mềm | [Báo lỗi](docs/BAO-LOI.md) |
+| Phiên bản/cập nhật | [Cập nhật](docs/PHIEN-BAN-VA-CAP-NHAT.md) |
 
-## Kết nối SQL từ bản 50
-
-Ô **Máy chủ** nhận `IP`, `IP,cổng` hoặc `SERVER\INSTANCE`. Cổng, đơn vị và TLS nằm trong **Nâng cao**. G-Stars tự đọc mã định danh của database TEST đã chuẩn bị; người dùng không phải nhập mã này.
-
-**Tài khoản kết nối SQL và tài khoản đăng nhập G-Stars là hai việc khác nhau.** Nếu IT cấp quyền Windows Authentication, chọn **Windows** và không nhập thêm tên/mật khẩu SQL. Nếu dùng SQL Authentication, IT cung cấp hoặc cấu hình tài khoản kết nối phù hợp; không cần tạo một SQL account riêng cho từng nhân viên chỉ để dùng G-Stars.
-
-## Database để thử nghiệm
-
-SQL Server phải đang chạy và database TEST phải tương thích G-Stars. Backup Carsoft gốc chưa bổ sung các thành phần G-Stars có thể không đủ để chạy. Xem [điều kiện database](docs/HUONG-DAN-IT.md#chuẩn-bị-database-test) trước khi phát cho nhiều máy.
-
-## Phạm vi phát hành
-
-Đây là bản UAT, chưa công bố nghiệm thu toàn bộ nghiệp vụ hoặc triển khai production. Bộ cài hiện chưa ký số; IT kiểm tra checksum và chính sách Windows trước khi cài. Các thư viện Microsoft/SAP giữ điều khoản cấp phép tương ứng.
-
-Kho công khai này chứa bộ cài, tài liệu, mẫu cấu hình và công cụ hỗ trợ IT. SQL backup, thông tin đăng nhập thực tế, mã nguồn ứng dụng và repository nhận báo lỗi không được công khai. Gửi lỗi bằng nút trong G-Stars; không đăng dữ liệu khách hàng hoặc mật khẩu lên GitHub công khai.
+Backup khác ngày nhưng cùng cấu trúc được hỗ trợ là mục tiêu tương thích. Không cam kết mọi phiên bản Carsoft khác cấu trúc, mọi luồng nghiệp vụ hay toàn bộ SQL gốc đã được khôi phục. Đây là bản TEST; không tự chuyển sang database đang vận hành.

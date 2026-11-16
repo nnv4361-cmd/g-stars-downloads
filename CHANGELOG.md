@@ -2,6 +2,14 @@
 
 [Về trang chính](README.md) · [Bản mới nhất](https://github.com/nnv4361-cmd/g-stars-downloads/releases/latest)
 
+## 2026.11.16.55 — 16/11/2026
+
+- Kết nối database Carsoft tương thích trực tiếp; bỏ điều kiện177contractlab,VIEW DEFINITION và markerUAT khỏi đường chạy thông thường, không tự sửa schema.
+- Dùng lại mật khẩu/quyền/cờ/đơn vị trong SQL; truy vấn xác thực/quyền có tham số và bỏ lối chấp nhận mật khẩu dùng chung cũ. Windows Authentication mặc định; SQL Authentication còn khi IT cần.
+- Tám báo cáo chạy SQL có tham số từ client, giữ các bản sửa và output/transaction; không cài procedure. Các nhánh phụ thuộc writer/cachelab dùng lại backend mãgốc, chưa coi là nghiệm thu mọi chức năng.
+- Đối chiếu công nợ xử lý tổng rỗngNULL thành0 theo mãgốc; vẫn từ chối thiếu cột. Workbook/tài liệu không phải đặt trong thư mục project.
+- Source tái build đúnghash; kiểm thử nativeSQL riêng và đóng gói cùng bản portable/GitHub. Xem phạm vi thực tế trong tài liệu kiểm thử;44thânSQLgốc còn thiếu.
+
 ## 2026.11.16.52 — 16/11/2026
 
 - Chặn kết quả tạo hóa đơn có mã ERP khác chứng từ đang gửi; giữ trạng thái cần đối chiếu và không tự tạo lại. Kiểm tra cả biên nhận đã lưu từ bản cũ.

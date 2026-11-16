@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "Mode": "UAT",
-  "Host": "SQL-TEST\\SQLEXPRESS",
+  "Mode": "Carsoft",
+  "Host": "SQLTEST",
   "Port": 0,
-  "Database": "CarsoftTest",
+  "Database": "CARSOFT_TEST",
   "Authentication": "Windows",
   "User": "",
   "DatabaseId": "",
