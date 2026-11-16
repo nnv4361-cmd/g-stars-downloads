@@ -1,0 +1,715 @@
+{
+  "schemaVersion": 1,
+  "clientVersion": "2026.11.16.52",
+  "algorithm": "SHA256(UTF8(sys.sql_modules.definition))",
+  "contracts": [
+    {
+      "name": "client_lab.AcceptWorkshopOrder",
+      "sha256": "1b92f76256935a98b17024c322420b3011f202ed664b87283cbbf5a8d6c592ff"
+    },
+    {
+      "name": "client_lab.ApplyPriceBatch",
+      "sha256": "0e98246afc9c758c2b0b08aff183b042b1f746484c282017bfa3759ad98cafa5"
+    },
+    {
+      "name": "client_lab.ApplySupplierOffsetLedger",
+      "sha256": "e1ceb345ee2791887fc584426bbde902059c56c9b6e0573b635aae917125cad9"
+    },
+    {
+      "name": "client_lab.ApplySupplierOffsetReversalLedger",
+      "sha256": "27a61dfeda9c424b10e49ff24c122c0ac18a5f9b8bc944b779e9296fed1f3edf"
+    },
+    {
+      "name": "client_lab.ApplySupplierRefundLedger",
+      "sha256": "9a23d4004938ad43716e68d3d262dca9cc1b2c36cfc93cb63c8a0eab60a0c439"
+    },
+    {
+      "name": "client_lab.ApplySupplierReversalLedger",
+      "sha256": "162fa134e2d618b3208213e8fd9d395fa13368108fad62798199757a2bb1d05d"
+    },
+    {
+      "name": "client_lab.ARSummarySource_v1",
+      "sha256": "3923b4432a0fac4f92a8bce89a103742449ff242e3375c62f0128ab587205a76"
+    },
+    {
+      "name": "client_lab.CompleteWorkshopTask",
+      "sha256": "cf0b5bc98b9cc6110a7cb65616cb90df3f1a3322a3a0a249db996d243af26d4d"
+    },
+    {
+      "name": "client_lab.CreateReceivingPlan",
+      "sha256": "dbf57f06fb227449ad4d20c1d888f040b4d9efa08d8e16500cfca1bebfee7d6b"
+    },
+    {
+      "name": "client_lab.CreateWorkshopOrder",
+      "sha256": "b09bc4b1074d07ea7a162d9db5b65fd95ccb270ffad0d08258a1fcedace42bd8"
+    },
+    {
+      "name": "client_lab.FinanceApplyBatch",
+      "sha256": "1bb5ec78744c5756b14d2d9564ac514c47b80419b18773b93ec566ec924a22d1"
+    },
+    {
+      "name": "client_lab.FinanceFingerprint",
+      "sha256": "abc01d8ab0d4342ecf4390a2e67ae653c6ff5192db5f595ce781c9df555e45dc"
+    },
+    {
+      "name": "client_lab.FinanceGuard",
+      "sha256": "d5b93f1096e52c2f07727b30a5d30fa215159c39665c3a6487b1ba5ee31f620a"
+    },
+    {
+      "name": "client_lab.FinanceLedgerSeal",
+      "sha256": "e0b505044f92184f61211df3af2566d0e3f239864c66d244014141dc85f85d37"
+    },
+    {
+      "name": "client_lab.FinanceLookups",
+      "sha256": "5be6c1e041c97e4e85f1ae99fcc0df43fb6a8a7d4ec2d582fe8b2b4505d2d167"
+    },
+    {
+      "name": "client_lab.FinanceRefreshSeal",
+      "sha256": "f8b7f00e52fed7b652b9e8a44ca930ce39567d2437da62555ae44f88b1d437d0"
+    },
+    {
+      "name": "client_lab.GStarsAccountPartySummary_v1",
+      "sha256": "b79ddb8b03bbb1c11fb08035111d1157d30eaeadad61c472c4de38be0868d690"
+    },
+    {
+      "name": "client_lab.GStarsARAging_v1",
+      "sha256": "42254cafda57f82491d0a08830703168096028a5cb2f328b479a047c3d5ea7e1"
+    },
+    {
+      "name": "client_lab.GStarsARAging_v2",
+      "sha256": "d65fc9c87d73eecb16bdfc1e7575f91f4e831cc9003834ceafd7fc18de2bb159"
+    },
+    {
+      "name": "client_lab.GStarsARAging_v3",
+      "sha256": "9685e850becb79d60fba7815bdbcf6b923d09aeda0238e76c45c0c06c0d00f5b"
+    },
+    {
+      "name": "client_lab.GStarsARAging_v4",
+      "sha256": "0e47d80cf3f26c8fa290f10900517476b699b9b69006727bbf3cff7681f35ce5"
+    },
+    {
+      "name": "client_lab.GStarsARAging_v5",
+      "sha256": "4863d843e4bf461c4232c0ebbb075262a9e38d60748654002da7054b4004902f"
+    },
+    {
+      "name": "client_lab.GStarsARDetail_v1",
+      "sha256": "648eb8cf19dab1994928044a13705dd03202fcc4cc44544f1e1e8d4e0cdce063"
+    },
+    {
+      "name": "client_lab.GStarsARRead",
+      "sha256": "a464763484504e08231c6fb448e7129800be3f60f929fa55c799c7b431cdcb9e"
+    },
+    {
+      "name": "client_lab.GStarsCashPostingDelete_v1",
+      "sha256": "e089fad1a0e2f7bb48930bc78e6a8d211093d5ea072ba24e1e0a29f252876eab"
+    },
+    {
+      "name": "client_lab.GStarsCashPostingSave_v1",
+      "sha256": "b7a7a9a18a8f0535072566cb3b838f8f7c84d7c14ecca5d0800c0d4fb50b11c9"
+    },
+    {
+      "name": "client_lab.GStarsCompletedWorkReport_v1",
+      "sha256": "0e4abac5d14a8484481e361ba22b82a1e470e17c163d4e8f72ad3c7e76abcddb"
+    },
+    {
+      "name": "client_lab.GStarsContractPostingSearch_v1",
+      "sha256": "6d5ed98c8de11d08038f240844c13e05794ec98fa92dd6d1891d8b965e3ac902"
+    },
+    {
+      "name": "client_lab.GStarsCustomerSettlementSummary_v1",
+      "sha256": "09face63cb874ca868cc4f093164117c2bb63b00d62b31a58548158ec66d2e72"
+    },
+    {
+      "name": "client_lab.GStarsDepartmentProfit_v2",
+      "sha256": "4cd099520b6b2d9e9b340223c401b9d717e20c7a74d986496b2ec8ceb0358362"
+    },
+    {
+      "name": "client_lab.GStarsDepartmentProfit_v3",
+      "sha256": "f577c1c0e996e0348e44183801c78a221182667ed8e26d84e48a457cedcdb333"
+    },
+    {
+      "name": "client_lab.GStarsExpenseClosingReport_v1",
+      "sha256": "be6eae8dca542b925e765fdb30a00705869c0eaab032b7fb49a1c3737740e1e1"
+    },
+    {
+      "name": "client_lab.GStarsExpenseDetail_v2",
+      "sha256": "358ef9969ab64598af04b3b77bce40068d5ef683db62e8637393c351e6aa927a"
+    },
+    {
+      "name": "client_lab.GStarsGeneralJournalPrint_v1",
+      "sha256": "6c2aa2945bd1b6b1c6f4ccfb21ac52322a29dc5f5144812a79f3a845c955564f"
+    },
+    {
+      "name": "client_lab.GStarsGroupMenuRights_v1",
+      "sha256": "a132032200db7e082291b65a5c63dbb5c9fa7bc49105438c70b3928a7f0397ec"
+    },
+    {
+      "name": "client_lab.GStarsLostDealRead",
+      "sha256": "75618e2862d3c87b14ce5fb5e9c55b4e138b0599f027a5338659db0d4f3d02a3"
+    },
+    {
+      "name": "client_lab.GStarsLostDealWrite",
+      "sha256": "55a7b0162813e1d3d19eb45e64419e2123e1c9d7e364512746936fb1d6b7b74a"
+    },
+    {
+      "name": "client_lab.GStarsMaintenanceAllocateKey_v1",
+      "sha256": "1cd4a8d11d707def18db583e0a705c6e8f0b92279154f5994e8411e552844598"
+    },
+    {
+      "name": "client_lab.GStarsMaintenanceWrite_v1",
+      "sha256": "ed4e7dc5a28f40b3ace966d5d291daf9b5eb039de3a4c3bf37d69cedd76550c5"
+    },
+    {
+      "name": "client_lab.GStarsMaintenanceWrite_v2",
+      "sha256": "c196b6a5c1fe490b632bfbf0856a0c22b625f0d16ba375ec9af699aaef4f2e87"
+    },
+    {
+      "name": "client_lab.GStarsModernARRead",
+      "sha256": "92e6178654839defed6017e40df662fea39df89952312456b86de124c6399244"
+    },
+    {
+      "name": "client_lab.GStarsNewDetailExpense_v1",
+      "sha256": "395d3ed152974ae75e8568e699a0258e8eb23e6c77c01e7cc3ad5c7c207c1f59"
+    },
+    {
+      "name": "client_lab.GStarsNewOutstandingInvoices_v1",
+      "sha256": "b9aefc76240e2ea6b3d9133e5443f821480ddd2854765b01a95880e2080d1ad9"
+    },
+    {
+      "name": "client_lab.GStarsNewTaxRefresh_v1",
+      "sha256": "29420620e300627a8c20155398db6babfb2a94d08781c8007ecbb1b2715192c5"
+    },
+    {
+      "name": "client_lab.GStarsPriceApply",
+      "sha256": "8d9fde20a791ed7dd66afc0dcd2eb8c1741de8c91fa6bf1d1a1336fa18111003"
+    },
+    {
+      "name": "client_lab.GStarsPricePreview",
+      "sha256": "af6922b2854bed2c7ef053485e6909f1ed7de3dfd509596857ff10b34966a530"
+    },
+    {
+      "name": "client_lab.GStarsPurchaseSettlementSelect_v1",
+      "sha256": "d2f2130bcae52bcbbc2e37c8c109ec57f3002d44694b786c764bd3345dc1f753"
+    },
+    {
+      "name": "client_lab.GStarsPurchaseSettlementSelect_v2",
+      "sha256": "d98b25bbf823304fce00f73707dfbe96305fa8d767d240531861345471b0fca6"
+    },
+    {
+      "name": "client_lab.GStarsPurchaseSettlementSummary_v1",
+      "sha256": "73441d3b402c545c845efa44a55abc635bea3c543e03a063cbad02b0f13955e3"
+    },
+    {
+      "name": "client_lab.GStarsPurchaseSettlementSummary_v2",
+      "sha256": "9165706a0c418d552b1d47bdd9f7c0cd05ca6dd126a03bea9804f80000c8bf71"
+    },
+    {
+      "name": "client_lab.GStarsRegionalRevenueReport_v1",
+      "sha256": "795ea61cdf41c621ad11ee390a3d5f13782bcded1b71090e59ba316bc47b1236"
+    },
+    {
+      "name": "client_lab.GStarsRepairDepartmentWrite",
+      "sha256": "6a17740709610eab486307bd9394de21d30206c5658c6d99f171c96cc69f6c04"
+    },
+    {
+      "name": "client_lab.GStarsRepairDepartmentWrite_v2",
+      "sha256": "55740082f382b6747b9383d99ffec2125a6bc0c8a4d0b873f079099490e7149c"
+    },
+    {
+      "name": "client_lab.GStarsRevenueClosingReport_v1",
+      "sha256": "9b04b14ea272149bffa790b514976c6e72b9edcdd5d1d90690e0ff853401b8b9"
+    },
+    {
+      "name": "client_lab.GStarsSalesByCustomer_v1",
+      "sha256": "f36047874e0669230cabaf5c15e631bdc76b5012769d03827975f6d972dfbb42"
+    },
+    {
+      "name": "client_lab.GStarsSalesByEmployee_v2",
+      "sha256": "ded522fec7c4a7d113a2845097c9c42a91b7a986fa30520e689439d9cd89ae2f"
+    },
+    {
+      "name": "client_lab.GStarsSalesBySupplier_v2",
+      "sha256": "c7cf24625fc7d379b67dc27e9d3cb27b636582944ee524302c3fdfde27f3faad"
+    },
+    {
+      "name": "client_lab.GStarsSalesTargetReport_v1",
+      "sha256": "2bb71ad45a7bac4bb13e5921081586d856ff859566ac4baa26c87dc91d800c27"
+    },
+    {
+      "name": "client_lab.GStarsServiceInvoices_v1",
+      "sha256": "ce2035c396512e2beee750c1512d35b336d097b119cd0f5add2d0365adc7a7c7"
+    },
+    {
+      "name": "client_lab.GStarsServicePostingDelete_v1",
+      "sha256": "b0ffa0ffa094caafcfe8773eedda8d6ddd7b98a02299eefdd10e0ffde2619205"
+    },
+    {
+      "name": "client_lab.GStarsServicePostingDelete_v2",
+      "sha256": "74f12b8a52563dd3253d3779575d37c9258c6c291ceb37f31a2c8026f7399770"
+    },
+    {
+      "name": "client_lab.GStarsServicePostingJournal_v1",
+      "sha256": "0eaf76ba66eaf818f6449af83dc64bf29e1ebd6dd516014349787112526cdba0"
+    },
+    {
+      "name": "client_lab.GStarsServicePostingJournal_v2",
+      "sha256": "9fb3a225452c0c8578207f065b478b0c76cbf5dc9bd5b92e761e46000699252b"
+    },
+    {
+      "name": "client_lab.GStarsServicePostingSave_v1",
+      "sha256": "ba7e3f60247b2c1f2767a29004f7a5333ee75dab42de7ab8fceecc7b9ec1f5d4"
+    },
+    {
+      "name": "client_lab.GStarsServicePostingSave_v2",
+      "sha256": "f5f080c094b13a1001dc2ee3faab54299b0f9172d359020a401e800cb44e4405"
+    },
+    {
+      "name": "client_lab.GStarsServiceRevenue_v2",
+      "sha256": "c17550b8c215b664757a4a91ce32f216f2b9e6220697eff2e68d1422cfedde5a"
+    },
+    {
+      "name": "client_lab.GStarsServiceSalesInvoiceReport_v1",
+      "sha256": "f11216fbf1528f809de3b0665fd68d95ad3d0157305d62aaee88171464fa2561"
+    },
+    {
+      "name": "client_lab.GStarsSupplierOutstandingReport_v1",
+      "sha256": "a9fd0dd61cfe2b9df80141b2f9a785920ac12a6ad1cba02c7f4a3c07bc07c9d8"
+    },
+    {
+      "name": "client_lab.GStarsTaxLegacyCandidates_v1",
+      "sha256": "2819148762f096fbcadd2767dae54c8aac7a65fc4f61f7475206b42cffb3478c"
+    },
+    {
+      "name": "client_lab.GStarsTaxReconciledRows_v1",
+      "sha256": "f8a49eefe4d9d97194f7ef83f35c07636e2e662f8ca04c52510166a947b61f54"
+    },
+    {
+      "name": "client_lab.GStarsTaxReconciliation_v1",
+      "sha256": "614ac71535d561a5a4f021900fe8a48db1efa4b4f0d84bda11435b24b0bcc3e4"
+    },
+    {
+      "name": "client_lab.GStarsTaxSourceRows_v1",
+      "sha256": "f7d93fd6956ec4f1cdc9dd3be94677e966fdcbe8b33b009d9ef628ffec3c4736"
+    },
+    {
+      "name": "client_lab.GStarsUserMenuRights_v1",
+      "sha256": "8ef0d2d53b374fe06cab992f859990422add732a61c6ac56d73477229888e2bd"
+    },
+    {
+      "name": "client_lab.GStarsVatCacheRebuild_v1",
+      "sha256": "5cf39b7bebfc5c7682f383a7b2641fd393e6aa1b6c46922ffb0415786506940e"
+    },
+    {
+      "name": "client_lab.GStarsVehicleDebtReconcile_v1",
+      "sha256": "f90be408840edf2eccd8d43744583dd553d60e6dcb701ac25a8e0d13aaa6c38b"
+    },
+    {
+      "name": "client_lab.GStarsVehicleInventoryReport_v1",
+      "sha256": "90baf745339101ae65499a2c1e390bbae3c60fb64d1f99c9b764ee7329eb7648"
+    },
+    {
+      "name": "client_lab.GStarsVehicleInventoryReport_v2",
+      "sha256": "5e7054987b5ac728dfbd79cbf34d4e96bdb25593b47540bc47aada591e835de1"
+    },
+    {
+      "name": "client_lab.GStarsVehicleInventoryReport_v3",
+      "sha256": "2cf592e6f3dfc45ab001f953fd55aa9ddc52e50a80ec8b1fe5e3c08274391a41"
+    },
+    {
+      "name": "client_lab.GStarsVehicleProfitReport_v1",
+      "sha256": "f45d03c69a078150b4180c021a00d8847da24da0769070ef49466dae0aa2dc7d"
+    },
+    {
+      "name": "client_lab.GStarsVehicleProfitReport_v2",
+      "sha256": "720660a651c0d6789f1f3f825e0ab92ca9eebeaadd43a99953aa2217f324a362"
+    },
+    {
+      "name": "client_lab.GStarsWorkInProgressReport_v1",
+      "sha256": "126947363420a011e510c223a5ebad4e0e29829f1bf71a1006c71f8112e72a48"
+    },
+    {
+      "name": "client_lab.IssueWorkshopMaterial",
+      "sha256": "9439ed34a16baa90a2f6f574740d911d27b25dddcb1ec299a1585517c409876f"
+    },
+    {
+      "name": "client_lab.ListAllocationMethod",
+      "sha256": "e9684047a0050588c1c633ce9e0e7ec9e499e0c88f4ae6b27bab6db9654ea05e"
+    },
+    {
+      "name": "client_lab.ListEmployeeGroup",
+      "sha256": "9c492ae87fa6eacb784a4d40be7944c2e935bad39fbbe7e1044ef451da45f474"
+    },
+    {
+      "name": "client_lab.ListPurchases",
+      "sha256": "ed5d08a92f282389c1f23db2d6c59191d22a1daba0e19e6d46364c78f0b3b768"
+    },
+    {
+      "name": "client_lab.ListReceivingPlans",
+      "sha256": "0b85a619b9e6c831463aacafd862d2713cd03a5d519e3c0abe2a3c682347cad0"
+    },
+    {
+      "name": "client_lab.ListRepairDepartment",
+      "sha256": "0be30f074b938ac59106d4d7a87b473b14e860b72285b680810ec15a34422c93"
+    },
+    {
+      "name": "client_lab.ListRepairQuotes",
+      "sha256": "63f7a39bb56092b365bae5cc71bc8e6db2362b2c7ca3557878f0c3097bcfda7a"
+    },
+    {
+      "name": "client_lab.ListRepairType",
+      "sha256": "77cf2f769b1d0cee73408584e62e513f880c920aa87f7aae7dac323229a800ca"
+    },
+    {
+      "name": "client_lab.ListServiceFinance",
+      "sha256": "ce633b29257b19445f31e97f4268774f88dd5efc27b71546b5dfa3948c2202ef"
+    },
+    {
+      "name": "client_lab.ListSupplierMasters",
+      "sha256": "68d1d03bb58804eac7566b984336dcd1a546f9a52b5de7dcf4fb9b2c7550188f"
+    },
+    {
+      "name": "client_lab.ListSupplierPayables",
+      "sha256": "7e4c1b3f1f37a84b48f125aa6cb776f4b5aa9becbf0033b0f2978e6b9894701b"
+    },
+    {
+      "name": "client_lab.ListWorkshopOrders",
+      "sha256": "ec962eecc76b5a4df88010e546d6015778442ef9bcbdd2aa4cfcb7790169b15f"
+    },
+    {
+      "name": "client_lab.LookupPurchaseItems",
+      "sha256": "79f3ddbce4439731ec717887859e4ca5610107d9070a05745dde3e44213b785e"
+    },
+    {
+      "name": "client_lab.OffsetSupplierCredit",
+      "sha256": "7f17dfffcfece49c05a4d6215bb49c0c7155f1df079db2bbd4bdf18fc8f445c5"
+    },
+    {
+      "name": "client_lab.PaySupplierReceipt",
+      "sha256": "79dc5a5730a20b48ff79ef3e82175e93a6620af65ef72a48c79c4fa217332593"
+    },
+    {
+      "name": "client_lab.PostReceivingPayable",
+      "sha256": "9df8c24119945bfaccc6875c3ea64b71373eaa0f5a565cccb35fd43175094d37"
+    },
+    {
+      "name": "client_lab.PostServiceFinance",
+      "sha256": "806024e8d493ebc70171820b3e8ae836914e5da9d15cb82bf5771c8c1c488f58"
+    },
+    {
+      "name": "client_lab.PurchaseFingerprint",
+      "sha256": "5fac71e67aefd3795e2ee88cbbda3aa095247499588e660eb419e15251e02c6f"
+    },
+    {
+      "name": "client_lab.QuoteFingerprint",
+      "sha256": "70927947716e8eef9e7bcce2cf4be1cd44d5ea50313fa671695728df41e7273b"
+    },
+    {
+      "name": "client_lab.QuoteReferenceCount",
+      "sha256": "084d067ab0cd0c807b5496ea2f32401bd9e51dabe4277070c5fe8efe043c4a49"
+    },
+    {
+      "name": "client_lab.ReadFinanceReceipt",
+      "sha256": "e220b7d2ffaffa9fd07317f8a7de2942a38fecc8bd9fdf058f9a03e345308b70"
+    },
+    {
+      "name": "client_lab.ReadFinanceStatement",
+      "sha256": "e9c5b1a0f140938b84ee8d229a176d8db2c1168bf1cf2932d92519e097fa9500"
+    },
+    {
+      "name": "client_lab.ReadPurchase",
+      "sha256": "d29525547f41fce10138b69c95b63601f59d202077bae5a1eff2688e4f438ee8"
+    },
+    {
+      "name": "client_lab.ReadReceivingPlan",
+      "sha256": "abc9023267b94ede3d5dcdd3b013717e683ab5268a94429a962c3871de2db266"
+    },
+    {
+      "name": "client_lab.ReadRepairQuote",
+      "sha256": "827386a5626add9f11a9b26a4160dc7096c845358be9be40b658fc40883dd83a"
+    },
+    {
+      "name": "client_lab.ReadServiceFinance",
+      "sha256": "5b54c6d5256e89d0af99cbf2a9a11de3da7042ed77f68dfa669aeae34e0ea685"
+    },
+    {
+      "name": "client_lab.ReadSupplierMaster",
+      "sha256": "459747c3517ee51f9d85ae2052c330cac8db9c8b807333030aa1e62a9bf22c42"
+    },
+    {
+      "name": "client_lab.ReadSupplierPayable",
+      "sha256": "e924e62adad21e7b453d4f7bf78af430ead9cfed14c9c5eb958877284ea46c5d"
+    },
+    {
+      "name": "client_lab.ReadSupplierPayments",
+      "sha256": "7c32fddf240e1dbe199c4f17c429faeac3d3de95d925b6a3e847305d46684226"
+    },
+    {
+      "name": "client_lab.ReadSupplierReturns",
+      "sha256": "b9477ec4bad650d4b037afed71d000e1da99bec9ed7067079ad8558c404baae0"
+    },
+    {
+      "name": "client_lab.ReadSupplierSettlement",
+      "sha256": "89f9c9a2d5eb390aff2be02a1baeb7fd673cc27e6fd4ef4acfb52ca58fcfc994"
+    },
+    {
+      "name": "client_lab.ReadWorkshopOrder",
+      "sha256": "e4688a63753da5b41896506a792b27656d93cf23cb16815c12e2277a4a7b07d8"
+    },
+    {
+      "name": "client_lab.ReceivePurchaseStock",
+      "sha256": "1e4b70060e2577f8229aa83931df1e749b8c432f0b4837384a441b9e064c6afa"
+    },
+    {
+      "name": "client_lab.ReceiveServiceMoney",
+      "sha256": "d947b8ad97ecf40e31b8775dbe9345139799ddc60a408d25c60b00036b9ecf6c"
+    },
+    {
+      "name": "client_lab.ReceivingApplyLedger",
+      "sha256": "bab6e50220b63b32673f02603f4501210c79bea7e4f87e74dd4ae972f70cb835"
+    },
+    {
+      "name": "client_lab.ReceivingFingerprint",
+      "sha256": "3a6349310a7e094d3a8d31d812c84967f2c8691905946c65b4e1a455bc880c48"
+    },
+    {
+      "name": "client_lab.ReceivingGuard",
+      "sha256": "bdea33ce2bad1830bb48d30d3bc527d90e6cb0f6626329cfdde810fc88ba6e70"
+    },
+    {
+      "name": "client_lab.ReceivingLookups",
+      "sha256": "c3c471e32adea428c29a03cf6f550f55b5f1336f214448c537897aceb8b89c94"
+    },
+    {
+      "name": "client_lab.ReceivingPostingSeal",
+      "sha256": "92ccdb306b7a50b5b3926c952dec4119a753e955165c24757b349495d1bdf920"
+    },
+    {
+      "name": "client_lab.ReceivingRefreshSeal",
+      "sha256": "15271eec61424944cb09c6988d8e896fdf8455c7d1f8133dab22fb67ba8ad96c"
+    },
+    {
+      "name": "client_lab.ReconcileReceivables",
+      "sha256": "59b939779fa8729eb87e49f58e83d8716b94a3d30859a510702c20959aa564e2"
+    },
+    {
+      "name": "client_lab.RecoveryMenu",
+      "sha256": "2a259629896daeb28b2e9375d3131909669eebc5a5f1f2d4b9173ce37efefb9e"
+    },
+    {
+      "name": "client_lab.RecoveryOriginalAssetKind",
+      "sha256": "880e5ff38cbecf1e4faa634514bf9ffed9ecbeafe7250ae7d3b25ce2ab55cb6c"
+    },
+    {
+      "name": "client_lab.RecoveryOriginalDelivery",
+      "sha256": "22dd0a92c91064daa206ff053122a771528f2f6e1a72c5eceb1149b295ea5db4"
+    },
+    {
+      "name": "client_lab.RecoveryOriginalRights",
+      "sha256": "fd690e249b5f8fb158e3a466d7e73d025b4854447a5982e77b02a972c09343fc"
+    },
+    {
+      "name": "client_lab.RecoveryOriginalUom",
+      "sha256": "76ec08b138e978569e09d406b87bf0eb671165f77d2058a120932f9d66d24083"
+    },
+    {
+      "name": "client_lab.RecoveryP_CreateReceivingPlan",
+      "sha256": "347cde27f8d3862205339f1d3ebc0273e5df39e5efd364cb94b2d5bf3fc3a9ad"
+    },
+    {
+      "name": "client_lab.RecoveryP_ListPurchases",
+      "sha256": "5faaf9d9a7361fb5a9156f41ff3bacc0e85a4e518af23efba29806fb3df5bed2"
+    },
+    {
+      "name": "client_lab.RecoveryP_ListReceivingPlans",
+      "sha256": "1eea40e76c0cdc0f0cbe9345eec933e96f1d5aa065bad474b1d4bd757c42891c"
+    },
+    {
+      "name": "client_lab.RecoveryP_LookupPurchaseItems",
+      "sha256": "dcfce3598ee8a485997c0bd06aee663251cc3067533a1b52002e20ccc5addecb"
+    },
+    {
+      "name": "client_lab.RecoveryP_ReadPurchase",
+      "sha256": "d1eb2c3ca3d54a85a5b4b835cac7b3b3acea8c3374225704c4e0a81545348691"
+    },
+    {
+      "name": "client_lab.RecoveryP_ReadReceivingPlan",
+      "sha256": "1407e307988c2fb03e4fa9a77a9aded46daf1762fcf42c6cbb7d6164ada75359"
+    },
+    {
+      "name": "client_lab.RecoveryP_ReceivePurchaseStock",
+      "sha256": "18687a346bf64978a2f1f5d304440f1bd264f871759d9e1a507fa2ad39731cfa"
+    },
+    {
+      "name": "client_lab.RecoveryP_ReceivingLookups",
+      "sha256": "2a6a2ea671facb97c4fbbb1a64426cae30006eae8dba3cbf9d16a53e71778b94"
+    },
+    {
+      "name": "client_lab.RecoveryP_SavePurchaseDraft",
+      "sha256": "b945c22ae6c00ac855a31b2b471a8873c204fa550d4837368bc3a19ffd1257bc"
+    },
+    {
+      "name": "client_lab.RecoveryP_TransitionPurchase",
+      "sha256": "aa739c407b70cb707ea834a8a84a1887dff35a6c84a64b5c218ae7b1c63a9d4b"
+    },
+    {
+      "name": "client_lab.RecoveryPurchaseContext",
+      "sha256": "4895e40d45ef5b21003f065e148ff1220f917a7731db1511e1c9e623bb49cead"
+    },
+    {
+      "name": "client_lab.RecoveryPurchaseStock",
+      "sha256": "a91514d5c267624201b27bf1ecaa279b390200a791027f94ac2392aaa329e095"
+    },
+    {
+      "name": "client_lab.RecoverySessionGuard",
+      "sha256": "94af0e253900c7e313d93b59a08d789d72f0e9f8b0cbf42e6bc29f627a4b416a"
+    },
+    {
+      "name": "client_lab.RecoverySignIn",
+      "sha256": "ef249f3da7266581aea99332dc7b0c192cf66ff0fdad3418c015e6ab827bccfb"
+    },
+    {
+      "name": "client_lab.RecoverySignOut",
+      "sha256": "b2fc3bb8897b60e3d31bf544742d62354b2dea111ac41b49d86cc0f1323c7808"
+    },
+    {
+      "name": "client_lab.RecoverySupplierList",
+      "sha256": "33fa2c2cf10e15a5fcfef54948fdfb6e56170265522a3818726d3abab58f21ee"
+    },
+    {
+      "name": "client_lab.RecoverySupplierRead",
+      "sha256": "184d38bcaa6c169383e5246fbcbf36a6edb9362129a46a81920d0f7269690d14"
+    },
+    {
+      "name": "client_lab.RecoverySupplierSave",
+      "sha256": "b3f03024b2a1f4ef82837a63867de97831ca32ffec3cd68ff5b5950fb6c48f07"
+    },
+    {
+      "name": "client_lab.RecoveryUnits",
+      "sha256": "75fd5eda8dd5c9c6411bb49b812a7a63528577688de732d98c3b65510cee78b6"
+    },
+    {
+      "name": "client_lab.RefundSupplierCredit",
+      "sha256": "08083a27c5a689c8fd77c3a5ef43f7497793e2e86cbe137b508a8cc704bbb196"
+    },
+    {
+      "name": "client_lab.RepairQuoteLookups",
+      "sha256": "2f698b70515ad285f96b9b7675b38a46314aede67a54db186afcee67f0e37772"
+    },
+    {
+      "name": "client_lab.ReturnSupplierReceipt",
+      "sha256": "fddcace8bcb8fd7922a870859af33d40c98805566086df0062d51a9b6a36f86b"
+    },
+    {
+      "name": "client_lab.ReverseServiceReceipt",
+      "sha256": "7511387e5d1e0d61afefc6eecf83e6b81400f141ef43c3791b7a9971ee311fb1"
+    },
+    {
+      "name": "client_lab.ReverseSupplierOffset",
+      "sha256": "6513f97a369ec8077b9ba0a0b6045011d5baacfdd3c1fbbf614d33e5c6292b12"
+    },
+    {
+      "name": "client_lab.ReverseSupplierPayment",
+      "sha256": "0676530a1a533b9945e5945fdb67058926f7d0083fd5a05526bb66e7afbd059b"
+    },
+    {
+      "name": "client_lab.SaveAllocationMethod",
+      "sha256": "4cdefb1113595df8ce1bc88aaa79285f44f52a0c6027fe924c6ac84d2d6c5f47"
+    },
+    {
+      "name": "client_lab.SaveEmployeeGroup",
+      "sha256": "f4be3b405912a1ec1d22240b2027c3582af2ad759205ba385be5b4e6f5fb02e2"
+    },
+    {
+      "name": "client_lab.SaveLostDeal",
+      "sha256": "14d0c9204ac27ba9144bb4a5cd0acdc636f8da17ff8894084c2049189b506d1b"
+    },
+    {
+      "name": "client_lab.SavePurchaseDraft",
+      "sha256": "57c4cc7273ee9a60eca119c60d05db63d9241c4f989148d25cd4a949d08e552c"
+    },
+    {
+      "name": "client_lab.SaveRepairDepartment",
+      "sha256": "1ec2fc3f0aa91c638789086de3d6f4ce193b724d60c967f39bb3fcc0c45d6958"
+    },
+    {
+      "name": "client_lab.SaveRepairQuote",
+      "sha256": "c4ca4d180ee890c879f896fec3037b3607902ed7a30a810fd02354e940a84025"
+    },
+    {
+      "name": "client_lab.SaveRepairType",
+      "sha256": "29ab8d05645f9a553148751155622d54d2253e8fc29a96ef74a2d3aaab22f70b"
+    },
+    {
+      "name": "client_lab.SupplierMasterFingerprint",
+      "sha256": "331636265fc48e0ff579e7864d41f163c1983eb7e613e3efd7e36fd35dd58159"
+    },
+    {
+      "name": "client_lab.SupplierOffsetBalances",
+      "sha256": "ca99f9d8dcc660bcbd43c0b9fa3f6dc2f81cc0c664d17caf891195429b2713d8"
+    },
+    {
+      "name": "client_lab.SupplierPaymentApplyLedger",
+      "sha256": "3baa66595e3cdadad032a2393a8e405df137b996732ae059642cbce146a37895"
+    },
+    {
+      "name": "client_lab.SupplierPaymentCoreGuard",
+      "sha256": "fcc2712dbc8c48e756d5dddaa3684ce2a79d7654431f65c3cbc81b69eebb8b82"
+    },
+    {
+      "name": "client_lab.SupplierPaymentFingerprint",
+      "sha256": "5659ca708868eb3a9acf592ea1d2a34cf471ea6a43b13c0e0f37df85c7fd1ae1"
+    },
+    {
+      "name": "client_lab.SupplierPaymentGuard",
+      "sha256": "88f301b98c90b60c6bf8f97fbe3f37c5775e3129e248b85ce797a9b4c1450c97"
+    },
+    {
+      "name": "client_lab.SupplierReturnApplyLedger",
+      "sha256": "5a01cc137adb978621c3db5402d5b9a335d00842d900d3684b87e70993a55db6"
+    },
+    {
+      "name": "client_lab.SupplierReturnFingerprint",
+      "sha256": "2faffa9923d2fb199948be84bd8bea1adbada43cc6dc7024e1b8ff34b8160fe1"
+    },
+    {
+      "name": "client_lab.SupplierReturnGuard",
+      "sha256": "827103a51b53b592f370dfd07a43f834686e8f57fb74da6c78c5ef162e420613"
+    },
+    {
+      "name": "client_lab.SupplierReturnSourceLines",
+      "sha256": "39645f734e5165d6ce0a9afcadcf13efd418eef4b72e0792dc4013725ecacc8d"
+    },
+    {
+      "name": "client_lab.SupplierReturnSources",
+      "sha256": "5f6f88397d3df7fbc72ac5e031eb127c0eea1f6e2ce651803ee67baace7f1e8d"
+    },
+    {
+      "name": "client_lab.TransitionPurchase",
+      "sha256": "c9328ca0642c249cc7deca4a5331829e332435bfedddcd9480a47a5ecfe7c83b"
+    },
+    {
+      "name": "client_lab.TransitionRepairQuote",
+      "sha256": "89c3c31921a2f812c751f2e1d3d78ca7a321df0c3d87dd5bad133bb2bf0a971a"
+    },
+    {
+      "name": "client_lab.UpdateCustomerContact",
+      "sha256": "047b142090a1bdafd41cce88c8c87f7b49475258eafa9abf3bbf4507a89b6217"
+    },
+    {
+      "name": "client_lab.UpdateSupplierMasterContact",
+      "sha256": "5f3b0ed07afbb9fbc0589b7a4d0de79afa3c1ba0a122e2075cd38a3bfebda86b"
+    },
+    {
+      "name": "client_lab.WorkshopCheck",
+      "sha256": "a2bbc9a85c7891f66822780d05586a268529506446d448813ccb3371e1ecbe98"
+    },
+    {
+      "name": "client_lab.WorkshopFingerprint",
+      "sha256": "002774aaf212e0ea09583add74127af274211b674946fc6b6db4d6071b59adf9"
+    },
+    {
+      "name": "client_lab.WorkshopStock",
+      "sha256": "221a7a6efb2d0ab80d417811fb39d97685b6835fc23941edf729aaa61016a9e8"
+    }
+  ]
+}

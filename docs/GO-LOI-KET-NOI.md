@@ -14,7 +14,7 @@ Trong **Chọn SQL**, bấm **Chép lỗi** để lấy thông báo đã che m�
 | Không tải được danh sách database | Kiểm tra quyền truy cập/metadata; có thể gõ đúng tên database TEST được IT cấp rồi kiểm tra. Không chọn database khác để thử ghi. |
 | Lỗi TLS/chứng chỉ/SSL | IT kiểm tra chứng chỉ được máy tester tin cậy và tên máy chủ. Không tự bỏ xác minh chứng chỉ hoặc tắt TLS toàn hệ thống. |
 | Database chưa được chuẩn bị TEST/UAT | Chạy script kiểm tra chỉ đọc. IT xác minh đúng bản TEST rồi xử lý dấu môi trường; không đánh dấu database đang vận hành là TEST. |
-| Thiếu `client_lab` hoặc thiếu quyền VIEW DEFINITION | Đây là bước tương thích sau kết nối SQL. Cần đủ 177 hợp đồng đúng phiên bản và quyền xem định nghĩa; `IT-Mark-UAT.sql` không cài các hợp đồng. |
+| Thiếu `client_lab` hoặc thiếu quyền VIEW DEFINITION | SqlClient đã mở database; bị chặn tương thích. Dùng [bộ chẩn đoán chỉ đọc](SQL-KHONG-VAO-DUOC.md) để phân biệt thiếu hợp đồng/quyền/sai hash. `IT-Mark-UAT.sql` không cài hợp đồng. |
 | Hash/phiên bản hợp đồng SQL chưa khớp | Đối chiếu bản SQL với bản G-Stars được phát hành. Không sửa hash hoặc tạo procedure giả để bỏ chặn. |
 | Database chỉ đọc hoặc định danh khác cấu hình | Xác minh đúng bản TEST, trạng thái và việc restore gần đây. Không tự đổi database gốc sang cho ghi. Chọn lại cấu hình theo IT. |
 | Đổi máy/người dùng Windows rồi mất cấu hình | Nhập lại file cấu hình do IT cấp và cấu hình đúng hồ sơ Windows; mật khẩu DPAPI không dùng chung giữa người dùng. |

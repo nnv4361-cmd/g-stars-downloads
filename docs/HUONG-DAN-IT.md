@@ -19,6 +19,10 @@ Chuẩn bị SQL TEST tương thích, chọn cách xác thực, cài thử trên
 Get-FileHash .\G-Stars-Setup.exe -Algorithm SHA256
 ```
 
+## Chẩn đoán lỗi thiếu hợp đồng SQL
+
+Nếu đã nhập máy chủ nhưng gặp lỗi “Thiếu hợp đồng SQL hoặc quyền VIEW DEFINITION”, làm theo [bộ kiểm tra chỉ đọc](SQL-KHONG-VAO-DUOC.md). Bộ cài52 chưa có migration backend đầy đủ cho backup Carsoft nguyên bản; đánh dấu UAT không thay thế bước đó.
+
 ## Chuẩn bị database TEST
 
 Database cần:
