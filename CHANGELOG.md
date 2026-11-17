@@ -1,3 +1,7 @@
+# 2026.11.17.67
+
+Một cây điều hướng; bỏ phân hệ trùng; giữ chứng từ khi đổi nhóm; DPI PerMonitorV2 và bố cục đăng nhập/hộp thoại/cửa sổ con. Engine và SQL giữ nguyên. [Chi tiết](docs/BAN-SUA-67.md).
+
 # 2026.11.17.66
 
 Khung ngoài trung tính/gọn; tìm chức năng không dấu trên menu gốc; giữ vị trí khi đổi phân hệ; tab và phản hồi chờ nhất quán. Màn bên trong/engine/SQL giữ nguyên. [Chi tiết](docs/BAN-SUA-66.md).

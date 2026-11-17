@@ -60,3 +60,7 @@ Chữ gọn9pt, Semibold nhẹ; visual patch đã kèm trong ứng dụng. Cập
 ## Bản66
 
 Cập nhật trong G-Stars như trước, không cần patch riêng. Khung ngoài và điều hướng mới; giữ màn nhập liệu, SQL, đăng nhập và hóa đơn. [Chi tiết](BAN-SUA-66.md).
+
+## Bản67
+
+Một cây điều hướng, đăng nhập và cửa sổ thích ứng. Cập nhật trong G-Stars; không cần patch riêng. Giữ cấu hình SQL và đăng nhập. [Chi tiết](BAN-SUA-67.md).

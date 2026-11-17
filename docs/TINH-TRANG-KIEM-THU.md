@@ -1,5 +1,7 @@
-# Kiểm thử G-Stars66
+# Kiểm thử G-Stars67
 
-[Trang chính](../README.md) · [Bản66](BAN-SUA-66.md)
+[Trang chính](../README.md) · [Bản67](BAN-SUA-67.md)
 
-62kiểm tra lớp vỏ/điều hướng/startup/cleanup;17font/52auth/8reads/17machine/109native0lỗi/0dialog/PDF;4màn giữ cấu trúc/font/nhãn;1141source build độc lập/335archive chỉ đọc;455SQL nguyên. Năm vai trò là mô phỏng lab, chưa phải nhân viên nghiệm thu. Ảnh dựng bằng DrawToBitmap có giới hạn, không phải DWM/video. Chưa MSI/UAC/Windows sạch/mọi DPI/toànERP;44SQLgốc thiếu vẫn chưa khôi phục.
+76tổ hợp resize/DPI mô phỏng;4màn nghiệp vụ×3kích thước; từng ô/nút hiện của4hộp thoại; đăng nhập thực với SQL lab; điều hướng gốc mở cửa sổ modal và giữ chứng từ.17font/52auth/8reads/17machine/109native không lỗi/PDF;1142source build độc lập/335archive chỉ đọc.
+
+DPI thực máy này96, native PerMonitorV2;125/150/200% là WM_DPICHANGED mô phỏng. Chưa nghiệm thu đa màn hình vật lý/DWM, Windows sạch/MSI/UAC/máy in/toàn hệ thống. Không database công ty hoặc dịch vụ hóa đơn trong lần sửa UI này.
