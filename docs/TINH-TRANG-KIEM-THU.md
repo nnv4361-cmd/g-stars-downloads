@@ -1,13 +1,5 @@
-# Kiểm thử G-Stars60
+# Kiểm thử G-Stars61
 
-[Trang chính](../README.md) · [Logic và flow60](BAN-SUA-60.md) · [Crash test59](BAN-SUA-59.md)
+[Trang chính](../README.md) · [Thiết lập61](BAN-SUA-61.md) · [Logic/flow60](BAN-SUA-60.md)
 
-| Nhóm vừa chạy trên60 | Kết quả |
-|---|---|
-| Logic hóa đơn |43kiểm tra; HTTP test double, không gọi nhà cung cấp thật |
-| Lưu hóa đơn/VAT một mức và nhiều mức |70kiểm tra; SQL thật, rollback/lưu lặp/mở lại/hủy, PDFCrystal |
-| Mua hàng → nhận từng phần → tồn/công nợ |82kiểm tra; SQL thật, oracle số tiền/tồn độc lập |
-| Hồi quy |52auth/quyền,109mẫu native,17cấu hình, viewer/PDF báo giá |
-| Source/đóng gói |1.137C# build độc lập;323appfiles/334archive chỉ đọc |
-
-Vòng test đọc nhầm bảng tồn/trường giá đã được giữ; sửa oracle theo SQL gốc rồi chạy fixture mới.43crash checks và157checks mở rộng của59 là bằng chứng kế thừa, không tính là vừa chạy lại trên60. Không chứng minh toànERP.44thânSQL thiếu; UOM/FX/đơn vị/quyền thật/concurrencySQL/physicalprinter/installedUAC chưa đầy đủ.
+23 startup checks/7 trường hợp;52auth/109native/17machine/viewerPDF;1137source độc lập/334archive. Dialog/provider thật trên Native55; identity/elevation/settings/machine-save là QA shim. Chưa UAC/MSI thật hay Windows user thứ hai. Engine60 nguyên byte;195logic/flow60 và crash59 kế thừa, không tính vừa chạy lại61. Chưa toànERP/44SQLgốc thiếu.

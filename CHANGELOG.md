@@ -1,3 +1,7 @@
+# 2026.11.17.61
+
+Sửa máy mới chưa cấu hình SQL bị thoát trước đăng nhập. Tự mở thiết lập, chờ IT lưu rồi đọc lại và đi tiếp. Hủy không kết nối fallback. [Chi tiết](docs/BAN-SUA-61.md).
+
 # 2026.11.17.60
 
 Sửa số chứng từ nhập kho trống vẫn vượt validation.195logic/flow SQLbackup; hồi quy tài khoản/menu/PDF. [Chi tiết](docs/BAN-SUA-60.md).

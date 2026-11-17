@@ -36,3 +36,7 @@ Chỉ worker đã giành quyền cập nhật mới được dọn gói và ghi 
 ## Bản60
 
 Sửa kiểm tra số chứng từ nhập kho;195logic/flow. Giữ cấu hình SQL và ghi nhớ đăng nhập. [Chi tiết](BAN-SUA-60.md).
+
+## Bản61
+
+Thiết lập SQL lần đầu mở từ G-stars.exe; lưu xong tiếp tục đăng nhập. Giữ cấu hình cũ. Bản cũ bị chặn trước đăng nhập có thể tải Setup mới từ link cố định và cài đè. [Chi tiết](BAN-SUA-61.md).
