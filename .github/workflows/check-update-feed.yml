@@ -1,0 +1,24 @@
+name: Check G-Stars update feed
+on:
+  push:
+    paths:
+      - 'updates/**'
+      - 'tools/check-update-feed.py'
+      - '.github/workflows/check-update-feed.yml'
+  pull_request:
+    paths:
+      - 'updates/**'
+      - 'tools/check-update-feed.py'
+      - '.github/workflows/check-update-feed.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test validator
+        run: python3 tools/check-update-feed.py --selftest
+      - name: Verify latest and exact maintenance URL
+        run: python3 tools/check-update-feed.py --root .
