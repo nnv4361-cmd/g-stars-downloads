@@ -1,3 +1,7 @@
+# 2026.11.17.69
+
+Nền DPI/bố cục chung cho đăng nhập và hộp thoại; đo hàng theo editor/nhãn/nút, nội dung cuộn riêng, nút cố định. Adapter cửa sổ xem bảng. Thêm thông tin môi trường màn hình vào báo lỗi. Giữ engine/SQL. [Chi tiết](docs/BAN-SUA-69.md).
+
 # 2026.11.17.68
 
 Sửa bố cục chi tiết: bỏ ép cuộn toàn cửa sổ, giữ font/kích thước nguồn, bảo vệ kích thước tối thiểu. Engine/SQL không đổi. [Chi tiết](docs/BAN-SUA-68.md).

@@ -68,3 +68,7 @@ Một cây điều hướng, đăng nhập và cửa sổ thích ứng. Cập nh
 ## Bản68
 
 Sửa lỗi bố cục bên trong nghiệp vụ, giữ font/kích thước thiết kế nguồn. Cập nhật G-Stars như bình thường, giữ SQL và đăng nhập. [Chi tiết](BAN-SUA-68.md).
+
+## Bản69
+
+Thay nền DPI/bố cục cho đăng nhập và các hộp thoại dùng chung. Cập nhật như bình thường, giữ SQL và đăng nhập. [Chi tiết](BAN-SUA-69.md).
