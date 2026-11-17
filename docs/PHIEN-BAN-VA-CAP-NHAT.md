@@ -64,3 +64,7 @@ Cập nhật trong G-Stars như trước, không cần patch riêng. Khung ngoà
 ## Bản67
 
 Một cây điều hướng, đăng nhập và cửa sổ thích ứng. Cập nhật trong G-Stars; không cần patch riêng. Giữ cấu hình SQL và đăng nhập. [Chi tiết](BAN-SUA-67.md).
+
+## Bản68
+
+Sửa lỗi bố cục bên trong nghiệp vụ, giữ font/kích thước thiết kế nguồn. Cập nhật G-Stars như bình thường, giữ SQL và đăng nhập. [Chi tiết](BAN-SUA-68.md).

@@ -1,3 +1,7 @@
+# 2026.11.17.68
+
+Sửa bố cục chi tiết: bỏ ép cuộn toàn cửa sổ, giữ font/kích thước nguồn, bảo vệ kích thước tối thiểu. Engine/SQL không đổi. [Chi tiết](docs/BAN-SUA-68.md).
+
 # 2026.11.17.67
 
 Một cây điều hướng; bỏ phân hệ trùng; giữ chứng từ khi đổi nhóm; DPI PerMonitorV2 và bố cục đăng nhập/hộp thoại/cửa sổ con. Engine và SQL giữ nguyên. [Chi tiết](docs/BAN-SUA-67.md).

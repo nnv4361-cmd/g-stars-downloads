@@ -1,7 +1,7 @@
-# Kiểm thử G-Stars67
+# Kiểm thử G-Stars68
 
-[Trang chính](../README.md) · [Bản67](BAN-SUA-67.md)
+[Trang chính](../README.md) · [Bản68](BAN-SUA-68.md)
 
-76tổ hợp resize/DPI mô phỏng;4màn nghiệp vụ×3kích thước; từng ô/nút hiện của4hộp thoại; đăng nhập thực với SQL lab; điều hướng gốc mở cửa sổ modal và giữ chứng từ.17font/52auth/8reads/17machine/109native không lỗi/PDF;1142source build độc lập/335archive chỉ đọc.
+448 mẫu thiết kế được rà bằng QA thiết kế, 447 nghiệp vụ giữ hình học/parent/Tab. 20 cửa sổ native có SQL,100 quan sát bố cục;109 thao tác đọc không lỗi;PDF;152 điều kiện Save/ghi sổ/undo/rollback trên fixture tổng hợp. Ghi nhớ đăng nhập và cấu hình SQL tương thích.1142C# build độc lập/335 archive checks.
 
-DPI thực máy này96, native PerMonitorV2;125/150/200% là WM_DPICHANGED mô phỏng. Chưa nghiệm thu đa màn hình vật lý/DWM, Windows sạch/MSI/UAC/máy in/toàn hệ thống. Không database công ty hoặc dịch vụ hóa đơn trong lần sửa UI này.
+Không đánh đồng quét thiết kế với chạy mọi nghiệp vụ. Còn điều khiển ngoài canvas kế thừa nguồn, đa màn hình thật, Windows sạch/MSI/UAC/máy in/nghiệm thu toàn hệ thống. Không đụng SQL công ty hay phát hành hóa đơn trong lần sửa UI này.
