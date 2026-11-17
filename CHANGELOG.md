@@ -1,3 +1,7 @@
+# 2026.11.17.64
+
+M-Invoice: kết nối/tải ký hiệu/lưu cấu hình theo đơn vị; gửi và đọc lại bản nháp, chống gửi lặp/timeout/đồng thời, PDF; không ký/phát hành hoặc ghi mã nháp thành số hóa đơn. Đã test thật trên staging với dữ liệu tổng hợp. [Chi tiết](docs/BAN-SUA-64.md).
+
 # 2026.11.17.63
 
 Chữ10,5pt/đậm hơn, DPI aware; cấu hình hóa đơn riêng theo đơn vị, bỏ giá trị thử cố định của V50. M-Invoice lưu cấu hình, chưa bật gửi. [Chi tiết](docs/BAN-SUA-63.md).

@@ -48,3 +48,7 @@ Thông tin hiển thị và hướng dẫn dùng tên G-Stars. Cấu hình kết
 ## Bản63
 
 Chữ và DPI; thiết lập hóa đơn theo đơn vị. Giữ cấu hình SQL và đăng nhập. [Chi tiết](BAN-SUA-63.md).
+
+## Bản64
+
+Gửi nháp M-Invoice trong client, cấu hình đơn giản theo đơn vị. Giữ SQL và đăng nhập. [Chi tiết](BAN-SUA-64.md).
