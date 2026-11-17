@@ -1,3 +1,7 @@
+# 2026.11.17.66
+
+Khung ngoài trung tính/gọn; tìm chức năng không dấu trên menu gốc; giữ vị trí khi đổi phân hệ; tab và phản hồi chờ nhất quán. Màn bên trong/engine/SQL giữ nguyên. [Chi tiết](docs/BAN-SUA-66.md).
+
 # 2026.11.17.65
 
 Visual patch: khôi phục cỡ chữ gọn, tăng độ đậm nhẹ; giữ menu, dữ liệu, thao tác, SQL và M-Invoice. [Chi tiết](docs/BAN-SUA-65.md).

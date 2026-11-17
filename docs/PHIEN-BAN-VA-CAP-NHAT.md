@@ -56,3 +56,7 @@ Gửi nháp M-Invoice trong client, cấu hình đơn giản theo đơn vị. Gi
 ## Bản65
 
 Chữ gọn9pt, Semibold nhẹ; visual patch đã kèm trong ứng dụng. Cập nhật từ nút Phiên bản như bình thường, giữ cấu hình SQL/đăng nhập. [Chi tiết](BAN-SUA-65.md).
+
+## Bản66
+
+Cập nhật trong G-Stars như trước, không cần patch riêng. Khung ngoài và điều hướng mới; giữ màn nhập liệu, SQL, đăng nhập và hóa đơn. [Chi tiết](BAN-SUA-66.md).
