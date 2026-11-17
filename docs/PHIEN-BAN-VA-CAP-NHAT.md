@@ -52,3 +52,7 @@ Chữ và DPI; thiết lập hóa đơn theo đơn vị. Giữ cấu hình SQL v
 ## Bản64
 
 Gửi nháp M-Invoice trong client, cấu hình đơn giản theo đơn vị. Giữ SQL và đăng nhập. [Chi tiết](BAN-SUA-64.md).
+
+## Bản65
+
+Chữ gọn9pt, Semibold nhẹ; visual patch đã kèm trong ứng dụng. Cập nhật từ nút Phiên bản như bình thường, giữ cấu hình SQL/đăng nhập. [Chi tiết](BAN-SUA-65.md).

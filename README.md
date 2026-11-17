@@ -1,8 +1,12 @@
+# G-Stars 2026.11.17.65
+
+Visual patch: chữ gọn9pt, đậm nhẹ Semibold; giữ giao diện và thao tác. [Bản65](docs/BAN-SUA-65.md).
+
 # G-Stars
 
 Client Windows dùng database G-Stars trên SQL Server TEST.
 
-**Phiên bản hiện tại:2026.11.17.64.** Có nút cập nhật ngay trong ứng dụng: tự tải, kiểm tra file, nâng phiên bản và mở lại; giữ cấu hình SQL và đăng nhập đã ghi nhớ.
+**Phiên bản hiện tại:2026.11.17.65.** Có nút cập nhật ngay trong ứng dụng: tự tải, kiểm tra file, nâng phiên bản và mở lại; giữ cấu hình SQL và đăng nhập đã ghi nhớ.
 
 [Tải Setup mới nhất](https://github.com/nnv4361-cmd/g-stars-downloads/releases/latest/download/G-Stars-Setup.exe) · [Các bản phát hành](https://github.com/nnv4361-cmd/g-stars-downloads/releases) · [Thay đổi](CHANGELOG.md)
 

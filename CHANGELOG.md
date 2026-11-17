@@ -1,3 +1,7 @@
+# 2026.11.17.65
+
+Visual patch: khôi phục cỡ chữ gọn, tăng độ đậm nhẹ; giữ menu, dữ liệu, thao tác, SQL và M-Invoice. [Chi tiết](docs/BAN-SUA-65.md).
+
 # 2026.11.17.64
 
 M-Invoice: kết nối/tải ký hiệu/lưu cấu hình theo đơn vị; gửi và đọc lại bản nháp, chống gửi lặp/timeout/đồng thời, PDF; không ký/phát hành hoặc ghi mã nháp thành số hóa đơn. Đã test thật trên staging với dữ liệu tổng hợp. [Chi tiết](docs/BAN-SUA-64.md).
