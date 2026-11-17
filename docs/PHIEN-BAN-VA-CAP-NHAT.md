@@ -32,3 +32,7 @@ Kiểm thử ngắt tiến trình không phải thử mất điện, ổ đĩa h
 ## Bản59
 
 Chỉ worker đã giành quyền cập nhật mới được dọn gói và ghi kết quả. Tiến trình trùng, yêu cầu bị sửa hoặc yêu cầu đã hoàn tất bị từ chối mà không phá trạng thái phiên khác. Bản59 giữ cơ chế giám sát/hoàn tác58. [Các ca mở rộng](BAN-SUA-59.md).
+
+## Bản60
+
+Sửa kiểm tra số chứng từ nhập kho;195logic/flow. Giữ cấu hình SQL và ghi nhớ đăng nhập. [Chi tiết](BAN-SUA-60.md).

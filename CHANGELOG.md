@@ -1,3 +1,7 @@
+# 2026.11.17.60
+
+Sửa số chứng từ nhập kho trống vẫn vượt validation.195logic/flow SQLbackup; hồi quy tài khoản/menu/PDF. [Chi tiết](docs/BAN-SUA-60.md).
+
 # G-Stars59 — 2026.11.16.59
 
 Sửa cleanup/result khi worker không sở hữu phiên; mở rộng12nhóm crash/157kiểm tra, giữ43checks cũ. [Chi tiết59](docs/BAN-SUA-59.md).

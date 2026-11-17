@@ -1,15 +1,13 @@
-# Kiểm thử G-Stars59
+# Kiểm thử G-Stars60
 
-[Trang chính](../README.md) · [Bản59](BAN-SUA-59.md) · [Cập nhật](PHIEN-BAN-VA-CAP-NHAT.md)
+[Trang chính](../README.md) · [Logic và flow60](BAN-SUA-60.md) · [Crash test59](BAN-SUA-59.md)
 
-| Nhóm | Bằng chứng |
+| Nhóm vừa chạy trên60 | Kết quả |
 |---|---|
-| Lỗi58 |Helper sản phẩm thật tái hiện xóa gói do tiến trình trùng và ghi đè kết quả do replay |
-| Sửa59 |Helper sản phẩm thật: trùng cùng phiên/hai phiên/ticket hỏng/replay đều từ chối và giữ dữ liệu của chủ phiên |
-| Crash mở rộng |12 nhóm/157kiểm tra với backup/journal/baseline hỏng, khóa/file sửa ngoài, retry/rollback ngắt, extraction/body-write ngắt |
-| Hồi quy crash |43checks cũ và Main59 thật phục hồi sau dual-kill |
-| Core/policy |72core/23policy; branch installed chỉ fake handoff, chưa MSI/UAC thật |
-| SQL/UI |52auth/8reports,109samples,17machineprofile và viewer/PDF; fixture SQL Native55 riêng |
-| Source/package |1.137C# độc lập;323appfiles/334archive chỉ đọc; portable và GitHub cùng phiên bản |
+| Logic hóa đơn |43kiểm tra; HTTP test double, không gọi nhà cung cấp thật |
+| Lưu hóa đơn/VAT một mức và nhiều mức |70kiểm tra; SQL thật, rollback/lưu lặp/mở lại/hủy, PDFCrystal |
+| Mua hàng → nhận từng phần → tồn/công nợ |82kiểm tra; SQL thật, oracle số tiền/tồn độc lập |
+| Hồi quy |52auth/quyền,109mẫu native,17cấu hình, viewer/PDF báo giá |
+| Source/đóng gói |1.137C# build độc lập;323appfiles/334archive chỉ đọc |
 
-Các ca ZIP/rollback/body-stream dùng QA pause có khai báo để ngắt đúng điểm; không thêm pause vào bản phát hành. Không fill disk, không shutdownWindows/SQL/OpenClaw, không SQL công ty. Chưa thử mất điện/hỏng đĩa/Windows sạch/installedUAC/mọi nghiệp vụ;44SQLgốc vẫn chưa khôi phục.
+Vòng test đọc nhầm bảng tồn/trường giá đã được giữ; sửa oracle theo SQL gốc rồi chạy fixture mới.43crash checks và157checks mở rộng của59 là bằng chứng kế thừa, không tính là vừa chạy lại trên60. Không chứng minh toànERP.44thânSQL thiếu; UOM/FX/đơn vị/quyền thật/concurrencySQL/physicalprinter/installedUAC chưa đầy đủ.
