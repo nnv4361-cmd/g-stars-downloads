@@ -1,3 +1,7 @@
+# 2026.11.17.70
+
+Lớp thích ứng DPI chung cho cửa sổ nghiệp vụ: vùng cuộn nội dung, thanh lệnh cố định, focus tới ô nhập, adapter chữ và C1. Giữ điều khiển/thao tác, engine và SQL. [Chi tiết](docs/BAN-SUA-70.md).
+
 # 2026.11.17.69
 
 Nền DPI/bố cục chung cho đăng nhập và hộp thoại; đo hàng theo editor/nhãn/nút, nội dung cuộn riêng, nút cố định. Adapter cửa sổ xem bảng. Thêm thông tin môi trường màn hình vào báo lỗi. Giữ engine/SQL. [Chi tiết](docs/BAN-SUA-69.md).

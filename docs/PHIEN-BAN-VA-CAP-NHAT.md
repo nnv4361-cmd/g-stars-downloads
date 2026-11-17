@@ -72,3 +72,7 @@ Sửa lỗi bố cục bên trong nghiệp vụ, giữ font/kích thước thi�
 ## Bản69
 
 Thay nền DPI/bố cục cho đăng nhập và các hộp thoại dùng chung. Cập nhật như bình thường, giữ SQL và đăng nhập. [Chi tiết](BAN-SUA-69.md).
+
+## Bản70
+
+Thích ứng DPI chung cho cửa sổ nghiệp vụ, giữ SQL và ghi nhớ đăng nhập khi cập nhật. [Chi tiết](BAN-SUA-70.md).
