@@ -44,3 +44,7 @@ Thiết lập SQL lần đầu mở từ G-stars.exe; lưu xong tiếp tục đ�
 ## Bản62
 
 Thông tin hiển thị và hướng dẫn dùng tên G-Stars. Cấu hình kết nối và đăng nhập được giữ nguyên. [Chi tiết](BAN-SUA-62.md).
+
+## Bản63
+
+Chữ và DPI; thiết lập hóa đơn theo đơn vị. Giữ cấu hình SQL và đăng nhập. [Chi tiết](BAN-SUA-63.md).

@@ -1,5 +1,5 @@
-# Kiểm thử G-Stars62
+# Kiểm thử G-Stars63
 
-[Trang chính](../README.md) · [Thông tin hiển thị62](BAN-SUA-62.md) · [Thiết lập61](BAN-SUA-61.md)
+[Trang chính](../README.md) · [Bản63](BAN-SUA-63.md)
 
-Vừa chạy62:16display/profile/helpchecks,52auth/quyền/8reads,17machineconfig,1137source độc lập/334archive. Giao diện cấu hình dùng tên G-Stars; import cấu hình mới/cũ và định dạng DPAPI được bảo toàn. Engine61nguyên byte. Startup23/109native/PDF61,195logic-flow60 và crash59 kế thừa. Chưa toànERP/44SQLgốc thiếu/actualUAC-MSI/Windows sạch/máy in thật.
+35kiểm tra cấu hình theo đơn vị;43logic hóa đơn transport giả;34auth/quyền;17machine;109mẫu native/0lỗi/0hộp thoại;66nhãn10,5pt/0ô nhập nhỏ tại báo giá/Crystal PDF đạt.1.138source build độc lập/334archive chỉ đọc. M-Invoice mới xác minh tenant và metadata công khai, chưa đăng nhập/tạo hóa đơn. Chưa DPI màn hình IT/UAC-MSI/Windows sạch/máy in thật/toànERP.

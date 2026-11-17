@@ -1,3 +1,7 @@
+# 2026.11.17.63
+
+Chữ10,5pt/đậm hơn, DPI aware; cấu hình hóa đơn riêng theo đơn vị, bỏ giá trị thử cố định của V50. M-Invoice lưu cấu hình, chưa bật gửi. [Chi tiết](docs/BAN-SUA-63.md).
+
 # 2026.11.17.62
 
 Thống nhất tên G-Stars trên màn thiết lập, thông báo, trợ giúp và tài liệu. File chia sẻ cấu hình dùng Mode=GStars, vẫn nhập được cấu hình cũ; giữ nguyên SQL/tài khoản/quyền. [Chi tiết](docs/BAN-SUA-62.md).
