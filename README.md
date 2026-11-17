@@ -1,13 +1,13 @@
 # G-Stars
 
-Phiên bản hiện tại: **2026.11.17.70**.
+Phiên bản hiện tại: **2026.11.17.71**.
 
-[Tải bộ cài mới nhất](https://github.com/nnv4361-cmd/g-stars-downloads/releases/latest/download/G-Stars-Setup.exe) · [Các bản phát hành](https://github.com/nnv4361-cmd/g-stars-downloads/releases) · [Thay đổi bản70](docs/BAN-SUA-70.md)
+[Tải bộ cài mới nhất](https://github.com/nnv4361-cmd/g-stars-downloads/releases/latest/download/G-Stars-Setup.exe) · [Bản phát hành](https://github.com/nnv4361-cmd/g-stars-downloads/releases) · [Bản sửa71](docs/BAN-SUA-71.md)
 
-IT cài và cấu hình SQL TEST một lần. Nhân viên dùng tài khoản nghiệp vụ hiện có. Bộ cài kiểm tra thư viện còn thiếu; cài thư viện có thể cần quyền quản trị và khởi động lại. Chỉ dùng database thử nghiệm riêng.
+IT cấu hình SQL TEST một lần; nhân viên dùng tài khoản nghiệp vụ hiện có. Cập nhật giữ SQL và ghi nhớ đăng nhập. Bộ cài kiểm tra thư viện; cài thư viện có thể cần quyền quản trị/khởi động lại.
 
-Bản70 áp dụng lớp DPI/bố cục chung cho cửa sổ nghiệp vụ: nội dung cuộn riêng, thanh lệnh cố định, tự đưa ô đang nhập vào vùng nhìn, adapter font và hàng bảng. Giữ trường, menu và cách thao tác. Login và các hộp thoại tiếp tục dùng nền bố cục chung. Cập nhật giữ cấu hình SQL và ghi nhớ đăng nhập.
+Bản71 sửa control bị khuất bằng adapter chung cho ô tra cứu, nhóm lệnh bảng, panel/group/tab và nội dung tài liệu. Giữ tên menu, trường, quyền và thao tác.53 vị trí cũ được đối chiếu; quét448 mẫu cửa sổ qua7DPI và840 quan sát trên20 cửa sổ có SQL. DPI cao là mô phỏng; chưa nghiệm thu4K vật lý/toàn hệ thống.
 
-[Hướng dẫn IT](docs/HUONG-DAN-IT.md) · [Cập nhật](docs/PHIEN-BAN-VA-CAP-NHAT.md) · [Kiểm thử và giới hạn](docs/TINH-TRANG-KIEM-THU.md)
+[Hướng dẫn IT](docs/HUONG-DAN-IT.md) · [Cập nhật](docs/PHIEN-BAN-VA-CAP-NHAT.md) · [Kiểm thử](docs/TINH-TRANG-KIEM-THU.md)
 
-Báo lỗi bằng nút **Báo lỗi**; không cần tài khoản GitHub. Không gửi mật khẩu hoặc dữ liệu khách hàng. Mỗi đơn vị cấu hình dịch vụ hóa đơn riêng. Bộ cài không chứa tài khoản SQL/hóa đơn/GitHub. Repository công khai phân phối bộ cài và tài liệu; source, dữ liệu và bằng chứng lab được giữ riêng.
+Báo lỗi ngay trong G-Stars, không cần tài khoản GitHub. Không gửi mật khẩu hoặc dữ liệu khách hàng. Repository công khai phân phối bộ cài/tài liệu; source và bằng chứng lab giữ riêng. Bộ cài không chứa tài khoản SQL/hóa đơn/GitHub. Chỉ sử dụng database thử nghiệm riêng.

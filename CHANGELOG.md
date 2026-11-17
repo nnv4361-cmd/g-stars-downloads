@@ -1,3 +1,7 @@
+# 2026.11.17.71
+
+Adapter control bị khuất theo loại thành phần;53 vị trí cũ,448 mẫu cửa sổ qua7DPI và840 quan sát SQL. Giữ nghiệp vụ/engine/SQL. [Chi tiết](docs/BAN-SUA-71.md).
+
 # 2026.11.17.70
 
 Lớp thích ứng DPI chung cho cửa sổ nghiệp vụ: vùng cuộn nội dung, thanh lệnh cố định, focus tới ô nhập, adapter chữ và C1. Giữ điều khiển/thao tác, engine và SQL. [Chi tiết](docs/BAN-SUA-70.md).

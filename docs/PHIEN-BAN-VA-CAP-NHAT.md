@@ -76,3 +76,7 @@ Thay nền DPI/bố cục cho đăng nhập và các hộp thoại dùng chung. 
 ## Bản70
 
 Thích ứng DPI chung cho cửa sổ nghiệp vụ, giữ SQL và ghi nhớ đăng nhập khi cập nhật. [Chi tiết](BAN-SUA-70.md).
+
+## Bản71
+
+Sửa control bị khuất theo lớp thành phần; giữ SQL và ghi nhớ khi cập nhật. [Chi tiết](BAN-SUA-71.md).
