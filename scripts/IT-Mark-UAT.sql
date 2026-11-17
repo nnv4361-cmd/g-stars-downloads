@@ -9,7 +9,7 @@ IF @ConfirmThisIsTest<>1 OR DB_NAME()<>@ExpectedTestDatabase
 IF DB_ID()<=4 OR CONVERT(nvarchar(20),DATABASEPROPERTYEX(DB_NAME(),'Updateability'))<>N'READ_WRITE'
     THROW 51000,'System or read-only database is not a G-Stars UAT target.',1;
 IF OBJECT_ID(N'dbo.HT_NguoiDung',N'U') IS NULL OR OBJECT_ID(N'dbo.SC_BaoGia',N'U') IS NULL
-    THROW 51000,'Expected restored Carsoft structures not found.',1;
+    THROW 51000,'Expected restored G-Stars structures not found.',1;
 IF EXISTS(SELECT 1 FROM sys.extended_properties WHERE class=0 AND name=N'GStarsEnvironment'
           AND CONVERT(nvarchar(128),value)<>N'UAT')
     THROW 51000,'Existing environment marker differs. No overwrite performed.',1;

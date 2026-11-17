@@ -1,3 +1,7 @@
+# 2026.11.17.62
+
+Thống nhất tên G-Stars trên màn thiết lập, thông báo, trợ giúp và tài liệu. File chia sẻ cấu hình dùng Mode=GStars, vẫn nhập được cấu hình cũ; giữ nguyên SQL/tài khoản/quyền. [Chi tiết](docs/BAN-SUA-62.md).
+
 # 2026.11.17.61
 
 Sửa máy mới chưa cấu hình SQL bị thoát trước đăng nhập. Tự mở thiết lập, chờ IT lưu rồi đọc lại và đi tiếp. Hủy không kết nối fallback. [Chi tiết](docs/BAN-SUA-61.md).
@@ -18,12 +22,12 @@ Thêm giám sát/nhật ký phục hồi khi cập nhật portable bị ngắt t
 
 ## 2026.11.16.57
 
-Cập nhật ngay trong G-Stars: tải, xác minh, đóng an toàn, áp dụng và mở lại. Portable thay file/hoàn tác; bản cài tự gọi Setup passive, tôn trọng UAC. Giữ cấu hình SQL và tài khoản Carsoft; không cài nền khi đang làm việc. Bản56 cần bootstrap57 một lần. Engine nghiệp vụ giữ nguyên56.
+Cập nhật ngay trong G-Stars: tải, xác minh, đóng an toàn, áp dụng và mở lại. Portable thay file/hoàn tác; bản cài tự gọi Setup passive, tôn trọng UAC. Giữ cấu hình SQL và tài khoản được cấp; không cài nền khi đang làm việc. Bản56 cần bootstrap57 một lần. Engine nghiệp vụ giữ nguyên56.
 
 
 ## 2026.11.16.56
 
-IT cấu hình một lần cho cả máy; giữ tài khoản/quyền Carsoft và cấu hình cũ. Sửa lỗi Crystal subreport làm báo giá không xem/in được. Tăng cỡ và độ tương phản chữ nhỏ, giữ trường và cách thao tác. Engine nghiệp vụ giữ nguyên so55. Kiểm thử trên backup riêng; cần IT thử lại máy in và màn hình thực tế.
+IT cấu hình một lần cho cả máy; giữ tài khoản/quyền G-Stars và cấu hình cũ. Sửa lỗi Crystal subreport làm báo giá không xem/in được. Tăng cỡ và độ tương phản chữ nhỏ, giữ trường và cách thao tác. Engine nghiệp vụ giữ nguyên so55. Kiểm thử trên backup riêng; cần IT thử lại máy in và màn hình thực tế.
 
 # Lịch sử phát hành
 
@@ -31,7 +35,7 @@ IT cấu hình một lần cho cả máy; giữ tài khoản/quyền Carsoft và
 
 ## 2026.11.16.55 — 16/11/2026
 
-- Kết nối database Carsoft tương thích trực tiếp; bỏ điều kiện177contractlab,VIEW DEFINITION và markerUAT khỏi đường chạy thông thường, không tự sửa schema.
+- Kết nối database G-Stars tương thích trực tiếp; bỏ điều kiện177contractlab,VIEW DEFINITION và markerUAT khỏi đường chạy thông thường, không tự sửa schema.
 - Dùng lại mật khẩu/quyền/cờ/đơn vị trong SQL; truy vấn xác thực/quyền có tham số và bỏ lối chấp nhận mật khẩu dùng chung cũ. Windows Authentication mặc định; SQL Authentication còn khi IT cần.
 - Tám báo cáo chạy SQL có tham số từ client, giữ các bản sửa và output/transaction; không cài procedure. Các nhánh phụ thuộc writer/cachelab dùng lại backend mãgốc, chưa coi là nghiệm thu mọi chức năng.
 - Đối chiếu công nợ xử lý tổng rỗngNULL thành0 theo mãgốc; vẫn từ chối thiếu cột. Workbook/tài liệu không phải đặt trong thư mục project.

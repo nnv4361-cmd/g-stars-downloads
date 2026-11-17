@@ -1,5 +1,5 @@
-# Kiểm thử G-Stars61
+# Kiểm thử G-Stars62
 
-[Trang chính](../README.md) · [Thiết lập61](BAN-SUA-61.md) · [Logic/flow60](BAN-SUA-60.md)
+[Trang chính](../README.md) · [Thông tin hiển thị62](BAN-SUA-62.md) · [Thiết lập61](BAN-SUA-61.md)
 
-23 startup checks/7 trường hợp;52auth/109native/17machine/viewerPDF;1137source độc lập/334archive. Dialog/provider thật trên Native55; identity/elevation/settings/machine-save là QA shim. Chưa UAC/MSI thật hay Windows user thứ hai. Engine60 nguyên byte;195logic/flow60 và crash59 kế thừa, không tính vừa chạy lại61. Chưa toànERP/44SQLgốc thiếu.
+Vừa chạy62:16display/profile/helpchecks,52auth/quyền/8reads,17machineconfig,1137source độc lập/334archive. Giao diện cấu hình dùng tên G-Stars; import cấu hình mới/cũ và định dạng DPAPI được bảo toàn. Engine61nguyên byte. Startup23/109native/PDF61,195logic-flow60 và crash59 kế thừa. Chưa toànERP/44SQLgốc thiếu/actualUAC-MSI/Windows sạch/máy in thật.

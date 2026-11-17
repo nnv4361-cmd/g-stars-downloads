@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "Mode": "Carsoft",
+  "Mode": "GStars",
   "Host": "SQLTEST",
   "Port": 0,
-  "Database": "CARSOFT_TEST",
+  "Database": "GStars_TEST",
   "Authentication": "Windows",
   "User": "",
   "DatabaseId": "",

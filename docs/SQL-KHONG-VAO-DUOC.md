@@ -27,7 +27,7 @@ Nếu quản trị thấy đủ 177 hash nhưng tài khoản app không thấy, 
 
 ## Giới hạn phát hành hiện tại
 
-G-Stars 52 kiểm tra **177 hợp đồng bổ sung do dự án tạo**. Đây không phải 44 thân SQL gốc còn thiếu trong quá trình reverse engineering. Bộ cài hiện chưa kèm migration hoàn chỉnh để bổ sung các hợp đồng vào một backup Carsoft nguyên bản. Vì vậy chưa thể cam kết chỉ cài client là chạy được trên backup ở công ty; đây là khoảng trống triển khai phía G-Stars.
+G-Stars 52 kiểm tra **177 hợp đồng bổ sung do dự án tạo**. Đây không phải 44 thân SQL gốc còn thiếu trong quá trình reverse engineering. Bộ cài hiện chưa kèm migration hoàn chỉnh để bổ sung các hợp đồng vào một backup gốc. Vì vậy chưa thể cam kết chỉ cài client là chạy được trên backup ở công ty; đây là khoảng trống triển khai phía G-Stars.
 
 Kho công khai này không chứa SQL nghiệp vụ, dữ liệu hoặc bản backup. Bộ chẩn đoán không thay thế gói backend. Ngoài định nghĩa procedure, gói đó còn cần kiểm chứng phụ thuộc bảng/kiểu dữ liệu, phiên bản SQL gốc, dữ liệu khởi tạo cần thiết, guard môi trường và quyền thực thi; không được sao chép dữ liệu thử từ lab sang TEST.
 

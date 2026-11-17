@@ -70,7 +70,7 @@ WHERE S.name='client_lab';
  [pscustomobject][ordered]@{schemaVersion=1;clientVersion=$pins.clientVersion;generatedAt=[DateTime]::UtcNow.ToString('o');status=$status;sqlConnectionOpened=$true;identity=$identity;identityReady=$identityReady;expected=177;matched=$match;missingOrHidden=$unseen;definitionHidden=$hidden;encrypted=$encrypted;versionMismatch=$different;nextAction=$next;findings=@($findings.ToArray());SQLWrites=$false;businessDataRead=$false;OLEDBTested=$false;businessLoginTested=$false;allWorkflowsAccepted=$false}
 }
 if(!$FunctionsOnly){
- if([string]::IsNullOrWhiteSpace($Server) -or [string]::IsNullOrWhiteSpace($Database)){throw 'Specify -Server and -Database. Example: .\Test-GStars-SQL.ps1 -Server "SQLTEST,1433" -Database "Carsoft_TEST" -WindowsAuthentication -OutFile .\sql-report.json'}
+ if([string]::IsNullOrWhiteSpace($Server) -or [string]::IsNullOrWhiteSpace($Database)){throw 'Specify -Server and -Database. Example: .\Test-GStars-SQL.ps1 -Server "SQLTEST,1433" -Database "G-Stars_TEST" -WindowsAuthentication -OutFile .\sql-report.json'}
  if($WindowsAuthentication -and $Credential){throw 'Choose Windows authentication OR SQL credentials.'}
  if($Database -in @('master','model','msdb','tempdb')){throw 'Select the restored TEST database.'}
  if(!$WindowsAuthentication -and !$Credential){$Credential=Get-Credential -Message 'SQL TEST login (not the G-Stars business account). Password is not saved.';if(!$Credential){throw 'Cancelled.'}}

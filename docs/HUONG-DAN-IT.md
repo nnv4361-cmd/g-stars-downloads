@@ -4,13 +4,13 @@
 
 ## Thiết lập một lần trên mỗi máy
 
-1. Restore backup Carsoft phù hợp vào SQL Server TEST. Cấp quyền kết nối, truy cập dữ liệu và thực thi nghiệp vụ cho danh tính kết nối do IT quản lý.
+1. Restore backup G-Stars phù hợp vào SQL Server TEST. Cấp quyền kết nối, truy cập dữ liệu và thực thi nghiệp vụ cho danh tính kết nối do IT quản lý.
 2. Cài G-Stars rồi mở **Cau-hinh-SQL / Thiết lập kết nối**, hoặc chạy `G-stars.exe --configure-sql`. Windows sẽ yêu cầu quyền quản trị khi cần.
 3. Nhập máy chủ (`IP`, `IP,cổng` hoặc `SERVER\INSTANCE`), database và thông tin kết nối SQL TEST mà IT đã sử dụng thành công. SQL Server là lựa chọn mặc định trong màn thiết lập IT; tùy chọn Windows vẫn dành cho môi trường đã cấp quyền Windows.
 4. Bấm **Kiểm tra kết nối → Lưu cấu hình**. Cấu hình được áp dụng cho mọi người dùng Windows trên máy đó. Mở lại G-Stars sau khi đổi kết nối.
-5. Nhân viên chỉ nhập tài khoản Carsoft và chọn đơn vị được phép tại màn đăng nhập. Không cấp thêm tài khoản nghiệp vụ hoặc nâng quyền trong database để ép chạy.
+5. Nhân viên chỉ nhập tài khoản được cấp và chọn đơn vị được phép tại màn đăng nhập. Không cấp thêm tài khoản nghiệp vụ hoặc nâng quyền trong database để ép chạy.
 
-Tài khoản kết nối máy chủ do IT cấu hình; tên/mật khẩu/quyền nghiệp vụ lấy từ `HT_NguoiDung`, `HT_Security` và dữ liệu Carsoft. Nhân viên không phải chọn kiểu xác thực hay nhập tài khoản kết nối SQL mỗi lần làm việc.
+Tài khoản kết nối máy chủ do IT cấu hình; tên/mật khẩu/quyền nghiệp vụ lấy từ `HT_NguoiDung`, `HT_Security` và dữ liệu G-Stars. Nhân viên không phải chọn kiểu xác thực hay nhập tài khoản kết nối SQL mỗi lần làm việc.
 
 ## Cấu hình và cập nhật
 

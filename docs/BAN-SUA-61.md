@@ -6,7 +6,7 @@ Sửa lỗi mở G-stars.exe trên máy mới chỉ thông báo chưa có cấu 
 
 1. Mở G-Stars như bình thường. Máy chưa cấu hình sẽ mở Thiết lập kết nối; Windows có thể hỏi quyền quản trị để IT lưu dùng chung cho máy.
 2. IT nhập kết nối SQL TEST đã có, kiểm tra rồi lưu.
-3. G-Stars đọc lại cấu hình và tự đi tiếp tới đăng nhập. Nhân viên dùng tài khoản Carsoft sẵn có; quyền lấy từ database. Các lần sau không hỏi thiết lập lại.
+3. G-Stars đọc lại cấu hình và tự đi tiếp tới đăng nhập. Nhân viên dùng tài khoản được cấp sẵn có; quyền lấy từ database. Các lần sau không hỏi thiết lập lại.
 
 Nếu hủy quyền Windows hoặc đóng thiết lập: không đăng nhập, không ghi cấu hình, không kết nối tới SQL lab mặc định. Có thể mở lại khi IT sẵn sàng. Cấu hình lỗi/hỏng có đường thiết lập lại. Nút Start → G-Stars - Chọn SQL vẫn dùng được. Nếu bản cũ đang bị chặn trước đăng nhập, tải Setup mới từ link cố định và cài đè.
 

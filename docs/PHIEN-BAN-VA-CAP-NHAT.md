@@ -40,3 +40,7 @@ Sửa kiểm tra số chứng từ nhập kho;195logic/flow. Giữ cấu hình S
 ## Bản61
 
 Thiết lập SQL lần đầu mở từ G-stars.exe; lưu xong tiếp tục đăng nhập. Giữ cấu hình cũ. Bản cũ bị chặn trước đăng nhập có thể tải Setup mới từ link cố định và cài đè. [Chi tiết](BAN-SUA-61.md).
+
+## Bản62
+
+Thông tin hiển thị và hướng dẫn dùng tên G-Stars. Cấu hình kết nối và đăng nhập được giữ nguyên. [Chi tiết](BAN-SUA-62.md).
