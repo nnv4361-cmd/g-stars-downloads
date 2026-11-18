@@ -92,3 +92,7 @@ Sửa thanh In/vùng Crystal theo loại control; giữ SQL và ghi nhớ. [Chi 
 ## Bản 74
 
 [Phiếu nghiệm thu kỹ thuật](BAN-SUA-74.md)
+
+## Bản 75
+
+[Báo cáo và phiếu sửa chữa](BAN-SUA-75.md)
