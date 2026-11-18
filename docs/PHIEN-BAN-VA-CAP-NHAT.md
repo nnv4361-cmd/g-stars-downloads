@@ -88,3 +88,7 @@ Khôi phục màn mặc định theo phân hệ, giữ SQL và ghi nhớ khi c�
 ## Bản73
 
 Sửa thanh In/vùng Crystal theo loại control; giữ SQL và ghi nhớ. [Chi tiết/giới hạn](BAN-SUA-73.md).
+
+## Bản 74
+
+[Phiếu nghiệm thu kỹ thuật](BAN-SUA-74.md)
