@@ -80,3 +80,7 @@ Thích ứng DPI chung cho cửa sổ nghiệp vụ, giữ SQL và ghi nhớ đ�
 ## Bản71
 
 Sửa control bị khuất theo lớp thành phần; giữ SQL và ghi nhớ khi cập nhật. [Chi tiết](BAN-SUA-71.md).
+
+## Bản72
+
+Khôi phục màn mặc định theo phân hệ, giữ SQL và ghi nhớ khi cập nhật. [Chi tiết](BAN-SUA-72.md).

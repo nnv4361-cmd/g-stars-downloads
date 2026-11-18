@@ -1,0 +1,44 @@
+{
+  "schema": "GStars.ReleaseFeed57/v1",
+  "draft": false,
+  "prerelease": false,
+  "tag_name": "v2026.11.18.72",
+  "html_url": "https://github.com/nnv4361-cmd/g-stars-downloads/releases/tag/v2026.11.18.72",
+  "assets": [
+    {
+      "name": "G-Stars-Setup.exe",
+      "size": 223099018,
+      "state": "uploaded",
+      "digest": "sha256:49403a3ad59c44109abb225a7fdee88f7c1f1a2648429426d60fcab3653463e7",
+      "browser_download_url": "https://github.com/nnv4361-cmd/g-stars-downloads/releases/download/v2026.11.18.72/G-Stars-Setup.exe"
+    },
+    {
+      "name": "IT-README.txt",
+      "size": 3089,
+      "state": "uploaded",
+      "digest": "sha256:a42f6ce55fc511338f58dec8c114f76add22edded927cf6b204c86ffb381c36c",
+      "browser_download_url": "https://github.com/nnv4361-cmd/g-stars-downloads/releases/download/v2026.11.18.72/IT-README.txt"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "size": 169,
+      "state": "uploaded",
+      "digest": "sha256:53d3e1a8e2b2036864206be095f45306270b60ca75bf54cbd322c83c380936b9",
+      "browser_download_url": "https://github.com/nnv4361-cmd/g-stars-downloads/releases/download/v2026.11.18.72/SHA256SUMS.txt"
+    },
+    {
+      "name": "G-Stars-Huong-dan-72.zip",
+      "size": 54382,
+      "state": "uploaded",
+      "digest": "sha256:decf0cc82a3da3ddd0f295a4192b030d94a58f11bf58a761db7133db238e5c4b",
+      "browser_download_url": "https://github.com/nnv4361-cmd/g-stars-downloads/releases/download/v2026.11.18.72/G-Stars-Huong-dan-72.zip"
+    },
+    {
+      "name": "G-Stars-Update.zip",
+      "size": 33391793,
+      "state": "uploaded",
+      "digest": "sha256:813baaff98284e3151508c3bdc5fb96a3fd8915008dfd7fabfc7c1d2aa73ecbe",
+      "browser_download_url": "https://github.com/nnv4361-cmd/g-stars-downloads/releases/download/v2026.11.18.72/G-Stars-Update.zip"
+    }
+  ]
+}
