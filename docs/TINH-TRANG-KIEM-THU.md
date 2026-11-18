@@ -1,3 +1,11 @@
+# G-Stars 2026.11.18.76
+
+Bản cập nhật sửa cách lưu tệp Excel cho báo giá và các chứng từ dùng mẫu. Mỗi lần xuất tạo một tệp riêng trong thư mục người dùng. Bộ cài chỉ phân phối mẫu Excel cần thiết.
+
+Đã điều chỉnh vùng cuộn khi đổi DPI, giới hạn khung chọn mẫu in và tối ưu hiển thị lịch sử sửa chữa. Khi báo lỗi, người dùng có thể chọn đính kèm lỗi chương trình gần nhất.
+
+Trên SQL TEST đã đối chiếu ô của tệp báo giá với dữ liệu nguồn và thử mở lại danh mục. Màn hình vật lý 125% tại nơi sử dụng còn chờ IT kiểm tra.
+
 # G-Stars 2026.11.18.75
 
 Bản này sửa bảng kê hóa đơn bán dịch vụ (tổng hợp), hóa đơn đến hạn thanh toán, danh mục bảo hiểm và hàng hết hạn sử dụng. Nút Xem và nút In hàng hết hạn dùng cùng điều kiện kho, đơn vị và ngày.
