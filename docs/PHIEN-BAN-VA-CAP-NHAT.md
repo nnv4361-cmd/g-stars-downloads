@@ -84,3 +84,7 @@ Sửa control bị khuất theo lớp thành phần; giữ SQL và ghi nhớ khi
 ## Bản72
 
 Khôi phục màn mặc định theo phân hệ, giữ SQL và ghi nhớ khi cập nhật. [Chi tiết](BAN-SUA-72.md).
+
+## Bản73
+
+Sửa thanh In/vùng Crystal theo loại control; giữ SQL và ghi nhớ. [Chi tiết/giới hạn](BAN-SUA-73.md).

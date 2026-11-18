@@ -1,3 +1,7 @@
+# 2026.11.18.73
+
+Sửa viewport Crystal/thanh In cố định ở lớp dùng chung. Rà219đường menu/2638lệnh;184mẫu,1096print checks;9PDF thực,1mẫu nghiệm thu14tham số còn BLOCKED. [Chi tiết](docs/BAN-SUA-73.md).
+
 # 2026.11.18.72
 
 Khôi phục đường vào danh sách Kế toán và dashboard Kinh doanh từ logic gốc; đủ9 phân hệ/268 node menu/9 lệnh chuột phải, giữ tài liệu đang mở. [Chi tiết](docs/BAN-SUA-72.md).

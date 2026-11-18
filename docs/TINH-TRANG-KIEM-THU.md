@@ -1,7 +1,9 @@
-# Kiểm thử G-Stars72
+# Kiểm thử G-Stars73
 
-[Trang chính](../README.md) · [Chi tiết và giới hạn](BAN-SUA-72.md)
+[Trang chính](../README.md) · [Chi tiết](BAN-SUA-73.md)
 
-Mới:9 đường vào phân hệ theo mã gốc,268node cây menu,9 lệnh chuột phải; mở hóa đơn đã ghi sổ rồi đóng không lưu/không gọi nhà cung cấp.34auth/17machine/109đọc/PDF;1146C# dựng độc lập,335archive. Chọn dòng/dispatch tự động, chưa hit-test chuột vật lý hay chứng từ sửa dở.
+8729event-hook instructions/63819phương thức gốc giữ inventory;448designer shadows/2638lệnh/6444callback giữ cấu trúc và local state qua lớp giao diện.219leaf SQL menu×tree/search=438QA dispatch, không chạy mọi target workflow.
 
-DPI448mẫu cửa sổ và152Save assertions là lịch sử71; không nhận là chạy mới72. Không tuyên bố toàn ERP/4K vật lý/Windows sạch/MSI/UAC/máy in đã đạt. Không SQL công ty/phát hành hóa đơn.
+184Crystal templates/1096checks;9PDF từ SQL đọc dữ liệu thật,1mẫu nghiệm thu thiếu14tham số còn BLOCKED.34auth/17machine/109đọc/PDF;1146C# độc lập;335archive.
+
+Không gửi job in, không toàn ERP/4K vật lý/MSI/UAC/máy in/Windows sạch.152Save/layout71 là lịch sử. Không điền dữ liệu giả để đổi BLOCKED thành PASS.
