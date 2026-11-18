@@ -111,3 +111,9 @@ Khi chuyển từ danh sách báo giá bảo hiểm sang Sửa, vùng nhập li�
 # G-Stars 2026.11.18.78
 
 Bảng nghiệp vụ tự đo tiêu đề theo phông chữ và chiều rộng hiển thị. Các cột thiếu chỗ tự mở rộng khi mở bảng hoặc khi thay đổi tiêu đề.
+
+# G-Stars 2026.11.18.79
+
+Tra cứu lịch sử sửa chữa hiển thị những dòng đầu trong khi tiếp tục tải đầy đủ kết quả. Có thể tìm kiếm hoặc đóng cửa sổ lúc đang tải. Bảng nghiệp vụ điều chỉnh chiều cao dòng theo phông chữ và kích thước chữ hiển thị. Khi cuộn, bảng đo lại giá trị số dài trong các dòng vừa xuất hiện.
+
+Trên SQL TEST với 180.697 dòng, bản 78 mất 4,72 giây từ lúc bấm menu tới khi cửa sổ nhận thao tác. Bản 79 đo được 0,20 giây, thấy 128 dòng đầu sau 1,19 giây và đủ dữ liệu sau 3,95 giây. Kết quả trên máy của tester đang chờ xác nhận.

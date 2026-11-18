@@ -1,8 +1,8 @@
 # G-Stars
 
-Phiên bản **2026.11.18.78** cải thiện hiển thị tiêu đề cột trên các bảng nghiệp vụ.
+Phiên bản **2026.11.18.79** cập nhật tốc độ mở lịch sử sửa chữa và kích thước dòng dữ liệu.
 
-[Tải bộ cài mới nhất](https://github.com/nnv4361-cmd/g-stars-downloads/releases/latest/download/G-Stars-Setup.exe) · [Chi tiết bản 78](docs/BAN-SUA-78.md) · [Cập nhật](docs/PHIEN-BAN-VA-CAP-NHAT.md)
+[Tải bộ cài mới nhất](https://github.com/nnv4361-cmd/g-stars-downloads/releases/latest/download/G-Stars-Setup.exe) · [Chi tiết bản 79](docs/BAN-SUA-79.md) · [Cập nhật](docs/PHIEN-BAN-VA-CAP-NHAT.md)
 
  IT cấu hình SQL TEST một lần; nhân viên dùng tài khoản nghiệp vụ hiện có. Cập nhật giữ SQL và ghi nhớ đăng nhập; cài thư viện có thể cần quyền quản trị/khởi động lại.
 
